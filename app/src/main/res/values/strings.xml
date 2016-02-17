@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tic TAC Toe</string>
+    <string name="action_about">About</string>
+    <string name="start_game">Start Game</string>
+    <string name="new_game">New Game</string>
+    <string name="proceed_to_leader_board">Proceed To Leader Board</string>
+    <string name="top_player">Top Players</string>
+    <string name="player1_name_hint">Enter player1 name</string>
+    <string name="player2_name_hint">Enter player2 name</string>
+    <string name="error_player_name_empty">Player names can not be empty</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
