@@ -11,4 +11,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="score">Score</string>
+    <string name="cross">X</string>
+    <string name="naught">0</string>
 </resources>
