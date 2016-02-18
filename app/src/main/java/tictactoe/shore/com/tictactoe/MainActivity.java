@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements GameboardFragment.GameboardFragmentEventsListener, PlayersLoginFragment.PlayersLoginFragmentEventsListener {
+public class MainActivity extends AppCompatActivity implements GameboardFragment.GameboardFragmentEventsListener, PlayersLoginFragment.PlayersLoginFragmentEventsListener, LeaderboardFragment.LeaderboardFragmentEventsListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +40,25 @@ public class MainActivity extends AppCompatActivity implements GameboardFragment
         return super.onOptionsItemSelected(item);
     }
 
+    private void setActionBarTitle(int resourceId) {
+        getSupportActionBar().setTitle(resourceId);
+    }
+
     @Override
     public void onProceedToLeaderboardClick() {
-
+        replaceFragment(LeaderboardFragment.newInstance());
+        setActionBarTitle(R.string.leader_board_fragment);
     }
 
     @Override
     public void onStartGameClick() {
         replaceFragment(GameboardFragment.newInstance());
+        setActionBarTitle(R.string.gameboard_fragment);
+    }
+
+    @Override
+    public void onNewGameClick() {
+        replaceFragment(PlayersLoginFragment.newInstance());
+        setActionBarTitle(R.string.players_login_fragment);
     }
 }

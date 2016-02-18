@@ -69,6 +69,9 @@ public class PlayersLoginFragment extends Fragment implements View.OnClickListen
                 String player1Name = mEditTextPlayer1.getText().toString();
                 String player2Name = mEditTextPlayer2.getText().toString();
                 if (!player1Name.isEmpty() && !player2Name.isEmpty()) {
+                    TicTacToeApp ticTacToeApp = (TicTacToeApp) getActivity().getApplication();
+                    ticTacToeApp.setPlayer1Name(player1Name);
+                    ticTacToeApp.setPlayer2Name(player2Name);
                     mPlayersLoginFragmentEventsListener.onStartGameClick();
                 } else {
                     Utils.showToast(getActivity(), R.string.error_player_name_empty);
