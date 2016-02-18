@@ -17,4 +17,13 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="GreenButton">
+        <item name="android:layout_marginTop">@dimen/view_vertical_spacing</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/view_horizontal_spacing</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@android:color/holo_green_dark</item>
+    </style>
+
 </resources>

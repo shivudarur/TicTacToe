@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://en.wikipedia.org/wiki/Tic-tac-toe -->
+<html lang="en" dir="ltr" class="client-js ve-not-available">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Tic-tac-toe - Wikipedia, the free encyclopedia</title>
+    <script>
+        document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );
+
+    </script>
+    <script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tic-tac-toe","wgTitle":"Tic-tac-toe","wgCurRevisionId":703701946,"wgRevisionId":703701946,"wgArticleId":31609,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Commons category with local link same as on Wikidata","Tic-tac-toe","Abstract strategy games","Mathematical games","Paper-and-pencil games"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Tic-tac-toe","wgRelevantArticleId":31609,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wikilove-recipient":"","wikilove-anon":0,"wgGatherShouldShowTutorial":true,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/100px-Tic_tac_toe.svg.png","wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSAcceptLanguageList":["en-gb","en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCentralAuthMobileDomain":false,"wgWikibaseItemId":"Q210339","wgVisualEditorToolbarScrollOffset":0}); /* @nomin */mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"}); /* @nomin */ ;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","ext.centralNotice.bannerController","skins.vector.js"]);
+} );
+
+    </script>
+    <link rel="stylesheet" href="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/load.php">
+    <style>
+        .uls-menu a{cursor:pointer}.uls-menu.callout .caret-before{border-top:20px solid
+        transparent;border-right:20px solid #C9C9C9;border-bottom:20px solid
+        transparent;display:inline-block;left:-21px;top:30px;position:absolute}.uls-menu.callout
+        .caret-after{border-top:20px solid transparent;border-right:20px solid
+        #FCFCFC;border-bottom:20px solid
+        transparent;display:inline-block;left:-20px;top:30px;position:absolute}.uls-ui-languages
+        button{width:23%;text-overflow:ellipsis;margin-right:4%}button.uls-more-languages{width:auto}.settings-title{font-size:11pt}.settings-text{color:#555555;font-size:9pt}div.display-settings-block:hover
+        .settings-text{color:#252525}
+        .mw-changeslist-line-watched .mw-title{font-weight:bold} .mw-changeslist
+        .mw-tag-marker,.mw-changeslist .mw-title{unicode-bidi:embed}
+        @media
+        print{#centralNotice{display:none}}.cn-closeButton{display:inline-block;zoom:1;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAABelBMVEX///////80NDT///////////////////////////8yMjIzMzM5OTkMDAxlZWWCgoIvLy////8AAAD9/f3////8/PxjY2Pa2tpqamo7Ozvp6elFRUWEhITCwsLNzc1WVlbY2Ng3Nzf+/v57e3vb29ufn58LCwthYWExMTFSUlJDQ0Py8vJXV1cvLy9WVlbExMQBAQH+/v59fX14eHg2NjYuLi5VVVXc3Nz6+vrIyMjj4+Pn5+dGRkZ5eXmBgYHp6elsbGwwMDB8fHz8/PzOzs5XV1c1NTXQ0NDn5+dkZGRnZ2ft7e3l5eUtLS3d3d07OztDQ0PHx8eRkZGysrJbW1v8/Pzu7u40NDRUVFRsbGzb29uIiIiXl5fi4uLy8vJmZmbh4eHp6elpaWmioqKCgoJ5eXk5OTmcnJxsbGzy8vJiYmKwsLDk5ORAQEA8PDw6OjrAwMCqqqqCgoLx8fHz8/Pr6+vx8fHj4+NlZWXn5+dtbW2jo6OdnZ16enp8kgr/AAAAfnRSTlMAqOd5JlJZc5YX5+flANTK6SMAmaap1L/c5Lngyre12rHlqc2xzADd6NrhsNno37cAqMzZ5unasJq1vbjf2Ne40ujLmrTf5sK23tOyteq95eC2xsneq7Hm4Ny/yNG5ttuws9zJ1dfky9q31cu65OPkxsbWtrezsLrbudrJy9cUNT7KAAAA+ElEQVQYV2NgAAEWVmYOEQ5mVhYGCOBV42QT1pfhE+PjlxVm4zQQAokJsqsYSYdzc3MzaSkrsAuCxDjZ5eS5FDNUk9NT0zQ0Ldk5gWJsCTq6rlGihoyMolJJpmbmbEDjnfm5IqzsExkZGbVzrOMdnSxYGFhdbEzcPZg8Mxm9bX39pPwDAlkZmIPcQkLDJAQio1IE9OIY7ZiimRk4HJhilBh9jHkkedRjGRmDubw4GESymLKBZonn5uUXAOlCLjERrOoQ5hUJ6BVDzIPZW4JkL9R9pUCzysqtK8Dug/hDHOyPSgmIP6D+rVKtrqmVhPkXW7hgCz/McAYAItEzkWDsbM4AAAAASUVORK5CYII=);background:url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/CentralNotice/resources/subscribing/CloseWindow19x19.png?d968e)!ie;width:19px;height:19px;text-indent:19px;white-space:nowrap;overflow:hidden}
+        #container{position:relative;min-height:100%}#container,video{width:100%;height:100%}#playerContainer{overflow:hidden;position:relative;height:100%;background:#000}#videoHolder{position:relative;overflow:hidden}.fullscreen
+        #playerContainer{position:absolute !important;width:100% !important;height:100%!
+        important;z-index:9999;min-height:100%;top:0;left:0;margin:0}.mwEmbedPlayer{width:100%;height:100%;overflow:hidden;position:absolute;top:0;left:0}.modal_editor{
+        left:10px;top:10px;right:10px;bottom:10px;position:fixed;z-index:100}.displayHTML
+        a:visited{color:white}.loadingSpinner{width:32px;height:32px;display:block;padding:0px;background-image:url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/loading_ani.gif?a51c5)}.mw-imported-resource{border:thin
+        solid
+        black}.kaltura-icon{background-image:url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/kaltura_logo_sm_transparent.png?28082)
+        !important;background-repeat:no-repeat;display:block;height:12px;width:12px;margin-top:2px
+        !important;margin-left:3px !important}.mw-fullscreen-overlay{background:rgb(0,0,0) none
+        repeat scroll 0%
+        0%;position:fixed;top:0pt;left:0pt;width:100%;height:100%;-moz-background-clip:border;-moz-background-origin:padding;-moz-background-inline-policy:continuous}
+        .play-btn-large{width:70px;height:53px;background
+        :url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button.png?aff14);position
+        :absolute;cursor :pointer;border :none !important; }.play-btn-large:hover{background
+        :url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/MwEmbedSupport/MwEmbedModules/MwEmbedSupport/skins/common/images/player_big_play_button_hover.png?24580)}.carouselContainer{position
+        :absolute;width :100%;z-index :2}.carouselVideoTitle{position :absolute;top :0px;left
+        :0px;width :100%;background :rgba(0,0,0,0.8);color :white;font-size :small;font-weight
+        :bold;z-index :2}.carouselVideoTitleText{display :block;padding :10px 10px 10px
+        20px}.carouselTitleDuration{position :absolute;top :0px;right :0px;padding
+        :2px;background-color :#5A5A5A;color :#D9D9D9;font-size :smaller;z-index
+        :2}.carouselImgTitle{position :absolute;width :100%;text-align :center;color
+        :white;font-size :small;background :rgba(0,0,0,0.4)}.carouselImgDuration{position
+        :absolute;top :2px;left :2px;background :rgba( 0,0,0,0.7 );color :white;padding :1px
+        6px;font-size :small}.carouselPrevButton,.carouselNextButton{display :block;position
+        :absolute;bottom:23px}.carouselPrevButton{left
+        :5px}.carouselNextButton{right:6px}.alert-container{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-image:linear-gradient(bottom,rgb(215,215,215)
+        4%,rgb(230,230,230) 55%,rgb(255,255,255)
+        100%);background-image:-o-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230)
+        55%,rgb(255,255,255) 100%);background-image:-moz-linear-gradient(bottom,rgb(215,215,215)
+        4%,rgb(230,230,230) 55%,rgb(255,255,255)
+        100%);background-image:-webkit-linear-gradient(bottom,rgb(215,215,215) 4%,rgb(230,230,230)
+        55%,rgb(255,255,255) 100%);background-image:-ms-linear-gradient(bottom,rgb(215,215,215)
+        4%,rgb(230,230,230) 55%,rgb(255,255,255) 100%);background-image:-webkit-gradient(linear,left
+        bottom,left
+        top,color-stop(0.04,rgb(215,215,215)),color-stop(0.55,rgb(230,230,230)),color-stop(1,rgb(255,255,255)));margin:auto;position:absolute;top:0;left:0;right:0;bottom:0;max-width:80%;max-height:30%}.alert-title{background-color
+        :#E6E6E6;padding :5px;border-bottom :1px solid #D1D1D1;font-weight :normal
+        !important;font-size:14px
+        !important;-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px
+        }.alert-message{padding :5px;font-weight :normal !important;text-align:center;font-size:14px
+        !important}.alert-buttons-container{text-align:center;padding-bottom:5px}.alert-button{background-color:#474747;color:white;-webkit-border-radius:.5em;-moz-border-radius:.5em;border-radius:.5em;padding:2px
+        10px;background-image:linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47)
+        55%,rgb(71,71,71) 68%);background-image:-o-linear-gradient(bottom,rgb(25,25,25)
+        4%,rgb(47,47,47) 55%,rgb(71,71,71)
+        68%);background-image:-moz-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47)
+        55%,rgb(71,71,71) 68%);background-image:-webkit-linear-gradient(bottom,rgb(25,25,25)
+        4%,rgb(47,47,47) 55%,rgb(71,71,71)
+        68%);background-image:-ms-linear-gradient(bottom,rgb(25,25,25) 4%,rgb(47,47,47)
+        55%,rgb(71,71,71) 68%);background-image:-webkit-gradient( linear,left bottom,left
+        top,color-stop(0.04,rgb(25,25,25)),color-stop(0.55,rgb(47,47,47)),color-stop(0.68,rgb(71,71,71))
+        )}.alert-text{color :black !important}
+        .PopUpMediaTransform a .play-btn-large{top:50%;left
+        :50%;width:70px;height:53px;margin-left:-35px;margin-top:-25px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA1CAMAAADLRm3ZAAABnlBMVEUAAAAAAAAAAABaWlp4eHh7e3t/f393d3eDg4N0dHRtbW2FhYVra2uJiYmNjY1nZ2eRkZFkZGSUlJRiYmKYmJhgYGCcnJxeXl5cXFyfn58AAACioqKlpaWsrKwAAACpqakAAAAAAAAAAAAAAABEREQFBQUHBwdMTEwAAAAYGBgAAAAAAAABAQEXFxcAAAAAAAAAAABxcXGoqKh3d3eampp8fHyIiIgUFBQcHBw0NDSFhYV+fn5FRUUmJiaNjY11dXWPj4+Hh4c9PT14eHifn59nZ2eBgYFISEiBgYFubm5vb28ODg4lJSVra2tiYmJoaGgEBAQmJiZmZmaLi4saGhpiYmKYmJhZWVlgYGBfX19vb29DQ0MGBgZcXFyBgYFKSkoPDw9ZWVlzc3NQUFBXV1eKiopUVFQdHR1VVVUQEBBYWFglJSVTU1NXV1cKCgosLCySkpJRUVFISEgyMjJPT08dHR2GhoY4ODhNTU09PT0MDAwuLi57e3sTExNJSUkgICBOTk4hISEbGxtTU1MoKChBQUEsLCxXV1cAAABycnIdNM6eAAAAinRSTlOzj6jO1dbX1NfU09nS2drR29Hc0N3Q3c/O3gDf3+Ce4EgIGW7HtbXKnLouq7S5cHIq1ODQ3NTXuLq/1tXEvNjT2NjC093N18bW0dC2vNHM0LW90Ne5z9rLzsrTxbXN1Me3zdDKzdfLu8y3zb3Lyba/2svFwcq618PKxLa/1LjJu8q8u8y+xsDKrdJqj5XQAAABYklEQVR4Xu3XVVNCQRjH4VdQEbvFVRAOIRl2d3d3d3d317d2GEaGOOfM1oUXPB/gN7NX/30BIYPeGMPAqDcgBMhrBUZWLwJBAcwcAriBAzfogAMdKIADBUUmmqm64JAxl2m1k/XMmZkin+YaxsxYqd9iA1OmsfDPajVDZqMgoL1jhzpTmR+k/OCQMlObG+L4dJgq050d5rKVJlOXGaHijjxzny6i94k005YqatBFlmlKEdfy1UeS+UmS0tllwc/0JEhT9WNnBuJlqCy4maE4OSO4mdFYOeO4mQm1jCnAzUyXSJqdm8fOLCRKWVomWIaVZHFrLqJlWE8Ts7lFuAzbGZF294iXYT8rnPLICcSZk5xQyjMzzTKc5wXTXFnoluFaE+TmlnYZipUBpgcA5syjjWU1Tf7I8wvbhr/6Im/vTmDLgO3D9Gn+R5+2aIbXzeABDjwgOIDZtwDIzvwsnR1xujV/AS6zSfMs2bS9AAAAAElFTkSuQmCC);background-image:url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/TimedMediaHandler/resources/player_big_play_button.png?aff14)!ie}.PopUpMediaTransform
+        a .play-btn-large
+        :hover{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA1CAMAAADLRm3ZAAABtlBMVEUAAAAAAAAAAAC5ubm1tbWwsLC+vr6Li4vExMSrq6umpqbIyMjOzs6ioqLT09OdnZ3Y2NiZmZnc3NyWlpbh4eGSkpLn5+eQkJCNjY0AAADr6+vv7+/z8/P39/cAAAD9/f0AAAAAAAAAAAAAAAB2dnYAAAAoKCj5+flra2sMDAwAAAAAAAAAAAAAAAAAAAACAgLW1tbPz88wMDCHh4fExMS8vLxKSkpubm6vr6+qqqo0NDQQEBDCwsK1tbUmJiaysrLT09PLy8uIiIgXFxetra2+vr7r6+tycnIbGxvMzMyTk5O1tbU8PDyjo6PR0dG0tLQLCwufn58HBwc9PT2bm5shISEqKiqXl5cICAiJiYmTk5Pj4+OoqKhpaWkKCgqOjo5TU1OXl5cYGBiKioo9PT18fHwlJSWGhoYuLi6CgoIvLy+Dg4Ofn5+oqKg7OzuAgIDk5OSLi4tHR0fIyMh9fX3Z2dlycnJPT08JCQl7e3vJyclhYWFZWVl4eHhhYWEUFBS6urpqamofHx9ycnK2trZzc3N6eno1NTUsLCyKioqAgIBBQUFmZmZHR0cICAjBwcEAAACIiIg+YVJpAAAAknRSTlOzj6jt6+ru4O/p5/Hy5vPl9eT24/ji+eHgAPr7/P2e/hlICG7YLr7+07accipwq7Tw777X6erGzuLjv7fs4rzn8PDYuObr+dK57tjqwuTu6rbjtcPiur3htdvg8+jRtt7H3Lndwdi83b7bwNze5cPb9t/G7drz0Mq22e7MzdjPuOrUu9fo1NnCwN/cxdLItu6t3VahkKcAAAFlSURBVHhe7dfFcgJBFIbRGyLEXegIDBAITtzd3d3d3d3d88ZJigqFzExNyyILzgN8Vb36+wJCGrXWj4JWrUEIkMUElEwWBJwMqNk4sAIDVlACA0qQAQMygowv05fNIDNYplKNFFBnmjN+ZU5SZtrTHHJnqTKVqX8KFykyWSlO9auNxJmmZBebOSWEmZ1EN3v73USZ0ngPxyckmbpYL3n5+JnLaB5FxbiZ20heU+V4mYpwflXVNTiZ2jAhHw1G6Zm1YGEtrZIzbUEiOjqlZrr8xfRIzfQGiOmXmhkIFDEEUjPDIYJGx8YlZyZChdxNYyzDTAS/uXmsZViI4rO0jLkMKzHevtaxl2EjztPWth2wM7sJ7uQHhyTLcJTkSnFqJFuGM4WL8wvSZUiXO11dA1BnbvQ0q2lwRO4f6Db88ekn8vxiB7oM6F8Nb+//6NPmy7C6GczAgBk4G1D75ADpqJ+l1CFGt+Y3XGRJEJqP8KwAAAAASUVORK5CYII=);background-image:url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/TimedMediaHandler/resources/player_big_play_button_hover.png?24580)!ie}
+        .mw-tmh-playtext{display:block;height:0;overflow:hidden}
+        .ve-activated #toc,.ve-activated #siteNotice,.ve-activated .mw-indicators, .ve-active
+        #bodyContent > :not( #siteSub ):not( #contentSub ):not( .ve-ui-mwTocWidget ),.ve-activated
+        #t-print,.ve-activated #t-permalink,.ve-activated #p-coll-print_export,.ve-activated
+        #t-cite,.ve-activating .ve-ui-surface,.ve-deactivating
+        .ve-ui-surface{display:none}.ve-activated #bodyContent,.ve-activated
+        #firstHeading{opacity:0.6;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ve-activated
+        #firstHeading{cursor:default} .ve-activated
+        #content{position:relative}.ve-init-mw-desktopArticleTarget-loading-overlay{position:absolute;left:0;right:0;z-index:1;margin-top:-0.5em}.ve-init-mw-desktopArticleTarget-progress{height:1em;overflow:hidden;margin:0
+        25%}.ve-init-mw-desktopArticleTarget-progress-bar{height:1em;width:0}
+        .mw-editsection{white-space:nowrap;
+        unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555}
+        .ve-init-mw-desktopArticleTarget-progress{height:0.75em;border:1px solid
+        #347bff;background:#fff;border-radius:2px;box-shadow:0 0.1em 0 0 rgba(0,0,0,0.15)
+        }.ve-init-mw-desktopArticleTarget-progress-bar{height:0.75em;background:#347bff}
+        @-webkit-keyframes
+        centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes
+        centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes
+        centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes
+        centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+        .ext-quick-survey-panel,.ext-qs-loader-bar{width:auto;background-color:#eeeeee}
+        .ext-qs-loader-bar{display:block;height:100px;margin-left:1.4em;clear:right;float:right;background-color:#eeeeee}.ext-qs-loader-bar.mw-ajax-loader{top:0}@media
+        all and
+        (min-width:768px){.ext-qs-loader-bar,.ext-quick-survey-panel{margin-left:1.4em;width:300px;clear:right;float:right}}
+    </style>
+    <style>
+        #mw-wlheader-showupdated,#mw-wlheader-bold,#mw-wlheader-green,#mw-watchlist-resetbutton{display:none}.mw-changeslist-line-watched
+        .mw-title,.mw-enhanced-watched .mw-enhanced-rc-time{font-weight:normal}
+    </style>
+    <style>
+        #mw-wlheader-showupdated,#mw-wlheader-green{display:inline}#mw-watchlist-resetbutton{display:block}li.mw-changeslist-line-watched,li.mw-history-line-updated{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/1/19/ChangedBulletVector.svg);list-style-image:url(//upload.wikimedia.org/wikipedia/commons/c/c2/ChangedBulletVector.png)\9}
+        td.mw-enhanced-rc,.mw-enhanced-rc-time{font-family:monospace,monospace}.mw-enhanced-rc-nested{background-position:0
+        3px}.mw-enhancedchanges-arrow-space{background-position:center
+        top}.mw-enhanced-rc-nested,.mw-enhancedchanges-arrow-space{background-repeat:no-repeat;background-image:url(//en.wikipedia.org/w/skins/Vector/images/bullet-icon.svg);background-image:-moz-linear-gradient(transparent,transparent),url(//en.wikipedia.org/w/skins/Vector/images/bullet-icon.svg);background-image:-webkit-linear-gradient(transparent,transparent),url(//en.wikipedia.org/w/skins/Vector/images/bullet-icon.svg);background-image:linear-gradient(transparent,transparent),url(//en.wikipedia.org/w/skins/Vector/images/bullet-icon.svg)}.mw-enhanced-watched
+        .mw-enhanced-rc-nested,.mw-changeslist-line-watched
+        .mw-enhancedchanges-arrow-space{background-image:url(//upload.wikimedia.org/wikipedia/commons/c/c2/ChangedBulletVector.png);background-image:-moz-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/1/19/ChangedBulletVector.svg);background-image:-webkit-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/1/19/ChangedBulletVector.svg);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/1/19/ChangedBulletVector.svg)}.mw-changeslist-line-not-watched
+        .mw-collapsible-arrow.mw-collapsible-toggle-collapsed{background-position:center
+        top;background-image:url(//upload.wikimedia.org/wikipedia/commons/b/bc/Vector_right_arrow_link.png);background-image:-moz-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/3/39/Vector_right_arrow_link.svg);background-image:-webkit-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/3/39/Vector_right_arrow_link.svg);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/3/39/Vector_right_arrow_link.svg)}.mw-changeslist-line-not-watched
+        .mw-collapsible-arrow.mw-collapsible-toggle-expanded{background-position:center
+        top;background-image:url(//upload.wikimedia.org/wikipedia/commons/2/27/Vector_down_arrow_link.png);background-image:-moz-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/d/db/Vector_down_arrow_link.svg);background-image:-webkit-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/d/db/Vector_down_arrow_link.svg);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/d/db/Vector_down_arrow_link.svg)}.mw-changeslist-line-watched
+        .mw-collapsible-arrow.mw-collapsible-toggle-collapsed{background-image:url(//upload.wikimedia.org/wikipedia/commons/a/af/Vector_right_arrow_changed.png);background-image:-moz-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/0/03/Vector_right_arrow_changed.svg);background-image:-webkit-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/0/03/Vector_right_arrow_changed.svg);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/0/03/Vector_right_arrow_changed.svg)}.mw-changeslist-line-watched
+        .mw-collapsible-arrow.mw-collapsible-toggle-expanded{background-image:url(//upload.wikimedia.org/wikipedia/commons/e/e5/Vector_down_arrow_changed.png);background-image:-moz-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/1/12/Vector_down_arrow_changed.svg);background-image:-webkit-linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/1/12/Vector_down_arrow_changed.svg);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/1/12/Vector_down_arrow_changed.svg)}
+    </style>
+    <style>
+        .cite-accessibility-label{position:absolute !important; top:-99999px;clip:rect(1px 1px 1px
+        1px); clip:rect(1px,1px,1px,1px);padding:0 !important;border:0 !important;height:1px
+        !important;width:1px !important;overflow:hidden}
+        .referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:10px;margin:0;z-index:5;padding:0}.referencetooltip
+        li{border:#080086 2px solid;max-width:260px;padding:10px 8px 13px
+        8px;margin:0px;background-color:#F7F7F7;box-shadow:2px 4px 2px
+        rgba(0,0,0,0.3);-moz-box-shadow:2px 4px 2px rgba(0,0,0,0.3);-webkit-box-shadow:2px 4px 2px
+        rgba(0,0,0,0.3)}.referencetooltip
+        li+li{margin-left:7px;margin-top:-2px;border:0;padding:0;height:3px;width:0px;background-color:transparent;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;border-top:12px
+        #080086 solid;border-right:7px transparent solid;border-left:7px transparent
+        solid}.referencetooltip>li+li::after{content:'';border-top:8px #F7F7F7
+        solid;border-right:5px transparent solid;border-left:5px transparent
+        solid;margin-top:-12px;margin-left:-5px;z-index:1;height:0px;width:0px;display:block}.client-js
+        body .referencetooltip li
+        li{border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;height:auto;width:auto;margin:auto;padding:0;position:static}.RTflipped{padding-top:13px}.referencetooltip.RTflipped
+        li+li{position:absolute;top:2px;border-top:0;border-bottom:12px #080086
+        solid}.referencetooltip.RTflipped li+li::after{border-top:0;border-bottom:8px #F7F7F7
+        solid;position:absolute;margin-top:7px}.RTsettings{float:right;height:24px;width:24px;cursor:pointer;background-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gear_icon.svg/24px-Gear_icon.svg.png);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/7/77/Gear_icon.svg);margin-top:-9px;margin-right:-7px;-webkit-transition:opacity
+        0.15s;-moz-transition:opacity 0.15s;-o-transition:opacity 0.15s;-ms-transition:opacity
+        0.15s;transition:opacity
+        0.15s;opacity:0.6;filter:alpha(opacity=60)}.RTsettings:hover{opacity:1;filter:alpha(opacity=100)}.RTTarget{border:#080086
+        2px solid}
+        .skin-vector li.GA,.skin-monobook li.GA,.skin-modern
+        li.GA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/4/42/Monobook-bullet-ga.png)}
+        .skin-vector li.FA,.skin-monobook
+        li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/d/d4/Monobook-bullet-star.png)}.skin-modern
+        li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Modern-bullet-star.svg/9px-Modern-bullet-star.svg.png)}
+        .wp-teahouse-question-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px
+        solid #a7d7f9;padding:1em}#wp-th-question-ask{float:right}.wp-teahouse-ask
+        a.external{background-image:none
+        !important}.wp-teahouse-respond-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px
+        solid #a7d7f9;padding:1em}.wp-th-respond{float:right}.wp-teahouse-respond
+        a.external{background-image:none !important}
+        #p-lang .uls-settings-trigger{background:transparent no-repeat right
+        top;background-image:url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/UniversalLanguageSelector/resources/images/cog-sprite.png?fae8e);background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2214%22%20height%3D%2232%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M14%209.3V6.73l-1.575-.264c-.117-.44-.292-.848-.496-1.2l.93-1.285-1.81-1.84-1.31.908c-.38-.205-.79-.38-1.196-.497L8.284%201H5.716l-.263%201.578c-.437.117-.816.293-1.196.497L2.975%202.17%201.137%203.98l.934%201.287c-.2.38-.376.79-.493%201.228L0%206.73V9.3l1.575.264c.117.438.292.818.496%201.198l-.93%201.315L2.95%2013.89l1.312-.938c.38.205.787.38%201.224.497L5.746%2015h2.566l.263-1.578c.408-.117.817-.293%201.196-.497l1.315.935%201.81-1.812-.935-1.315c.203-.38.38-.76.495-1.2L14%209.303zm-7%201.404c-1.488%200-2.683-1.2-2.683-2.69S5.542%205.327%207%205.327c1.458%200%202.683%201.198%202.683%202.69%200%201.49-1.195%202.688-2.683%202.688z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23808080%22%2F%3E%3Cuse%20transform%3D%22translate%280%2016%29%22%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E%0A);background-image:linear-gradient(transparent,transparent),url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/UniversalLanguageSelector/resources/images/cog-sprite.svg?624e4)!ie;background-image:-o-linear-gradient(transparent,transparent),url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/UniversalLanguageSelector/resources/images/cog-sprite.png?fae8e);height:16px;width:14px;float:right;cursor:pointer}.skin-vector
+        #p-lang .uls-settings-trigger{ margin-top:3px}#p-lang
+        .uls-settings-trigger:hover{background-position:right -16px}
+        .mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+        .mw-content-ltr .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr
+        .mw-collapsible-toggle{float:right} .mw-content-rtl .mw-collapsible-toggle,.mw-content-ltr
+        .mw-content-rtl
+        .mw-collapsible-toggle{float:left}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer}
+        caption .mw-collapsible-toggle,.mw-content-ltr caption
+        .mw-collapsible-toggle,.mw-content-rtl caption .mw-collapsible-toggle,.mw-content-rtl
+        .mw-content-ltr caption .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl caption
+        .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle,.mw-content-ltr li
+        .mw-collapsible-toggle,.mw-content-rtl li .mw-collapsible-toggle,.mw-content-rtl
+        .mw-content-ltr li .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl li
+        .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+        .suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px
+        0 0
+        0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid
+        1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em
+        0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid
+        1px
+        #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em
+        0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis;
+        text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special
+        .special-label{color:gray;text-align:left}.suggestions-special
+        .special-query{color:black;font-style:italic;text-align:left}.suggestions-special
+        .special-hover{background-color:silver}.suggestions-result-current
+        .special-label,.suggestions-result-current
+        .special-query{color:white}.highlight{font-weight:bold}
+        .postedit-container{margin:0
+        auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em
+        3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px
+        solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0
+        2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s
+        ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s
+        ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em
+        !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;
+        line-height:25px;background-repeat:no-repeat;background-position:8px
+        50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(//en.wikipedia.org/static/1.27.0-wmf.12/resources/src/mediawiki.action/images/green-checkmark.png?9048a)!ie;background-position:left}.postedit-close{position:absolute;padding:0
+        .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0
+        0.0625em 0
+        white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+        @media screen {
+        .tochidden,.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.toctoggle{font-size:94%}}
+        @media print {
+        #toc.tochidden,.toctoggle{display:none}}
+        .mw-ui-button{font-family:inherit;font-size:1em;display:inline-block;padding:.5em
+        1em;margin:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;*display:inline;zoom:1;background:#ffffff;color:#555555;border:1px
+        solid
+        #cccccc;border-radius:2px;min-width:4em;vertical-align:middle;text-align:center;font-weight:bold;cursor:pointer}.mw-ui-button:hover{background-color:#cccccc}.mw-ui-button:focus{border-color:#ffffff;box-shadow:0
+        0 0 1px
+        #cccccc;outline:none}.mw-ui-button:focus::-moz-focus-inner{border-color:transparent}.mw-ui-button:active,.mw-ui-button.mw-ui-checked{background:#777777;box-shadow:none}.mw-ui-button:hover,.mw-ui-button:active,.mw-ui-button:visited{color:#555555}.mw-ui-button:focus{background-color:#cccccc}.mw-ui-button:disabled{color:#cccccc}.mw-ui-button:disabled:hover,.mw-ui-button:disabled:active{background:#ffffff;box-shadow:none}.mw-ui-button:disabled{text-shadow:none;cursor:default}.mw-ui-button.mw-ui-big{font-size:1.3em}.mw-ui-button.mw-ui-block{display:block;width:100%}.mw-ui-button.mw-ui-progressive,.mw-ui-button.mw-ui-primary{background:#347bff;color:#fff;border:1px
+        solid #347bff;text-shadow:0 1px
+        rgba(0,0,0,0.1)}.mw-ui-button.mw-ui-progressive:hover,.mw-ui-button.mw-ui-primary:hover{background-color:#2962cc}.mw-ui-button.mw-ui-progressive:focus,.mw-ui-button.mw-ui-primary:focus{border-color:#ffffff;box-shadow:0
+        0 0 1px
+        #2962cc;outline:none}.mw-ui-button.mw-ui-progressive:focus::-moz-focus-inner,.mw-ui-button.mw-ui-primary:focus::-moz-focus-inner{border-color:transparent}.mw-ui-button.mw-ui-progressive:active,.mw-ui-button.mw-ui-primary:active,.mw-ui-button.mw-ui-progressive.mw-ui-checked,.mw-ui-button.mw-ui-primary.mw-ui-checked{background:#2962cc;box-shadow:none}.mw-ui-button.mw-ui-progressive:disabled,.mw-ui-button.mw-ui-primary:disabled{background:#dddddd;border-color:#dddddd}.mw-ui-button.mw-ui-progressive:disabled:hover,.mw-ui-button.mw-ui-primary:disabled:hover,.mw-ui-button.mw-ui-progressive:disabled:active,.mw-ui-button.mw-ui-primary:disabled:active,.mw-ui-button.mw-ui-progressive:disabled.mw-ui-checked,.mw-ui-button.mw-ui-primary:disabled.mw-ui-checked{box-shadow:none}.mw-ui-button.mw-ui-progressive.mw-ui-quiet,.mw-ui-button.mw-ui-primary.mw-ui-quiet{color:#555555}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:hover,.mw-ui-button.mw-ui-primary.mw-ui-quiet:hover,.mw-ui-button.mw-ui-progressive.mw-ui-quiet:focus,.mw-ui-button.mw-ui-primary.mw-ui-quiet:focus{background:transparent;color:#347bff}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:active,.mw-ui-button.mw-ui-primary.mw-ui-quiet:active,.mw-ui-button.mw-ui-progressive.mw-ui-quiet.mw-ui-checked,.mw-ui-button.mw-ui-primary.mw-ui-quiet.mw-ui-checked{color:#2962cc}.mw-ui-button.mw-ui-progressive.mw-ui-quiet:disabled,.mw-ui-button.mw-ui-primary.mw-ui-quiet:disabled{color:#cccccc}.mw-ui-button.mw-ui-constructive{background:#00af89;color:#fff;border:1px
+        solid #00af89;text-shadow:0 1px
+        rgba(0,0,0,0.1)}.mw-ui-button.mw-ui-constructive:hover{background-color:#008c6d}.mw-ui-button.mw-ui-constructive:focus{border-color:#ffffff;box-shadow:0
+        0 0 1px
+        #008c6d;outline:none}.mw-ui-button.mw-ui-constructive:focus::-moz-focus-inner{border-color:transparent}.mw-ui-button.mw-ui-constructive:active,.mw-ui-button.mw-ui-constructive.mw-ui-checked{background:#008c6d;box-shadow:none}.mw-ui-button.mw-ui-constructive:disabled{background:#dddddd;border-color:#dddddd}.mw-ui-button.mw-ui-constructive:disabled:hover,.mw-ui-button.mw-ui-constructive:disabled:active,.mw-ui-button.mw-ui-constructive:disabled.mw-ui-checked{box-shadow:none}.mw-ui-button.mw-ui-constructive.mw-ui-quiet{color:#555555}.mw-ui-button.mw-ui-constructive.mw-ui-quiet:hover,.mw-ui-button.mw-ui-constructive.mw-ui-quiet:focus{background:transparent;color:#00af89}.mw-ui-button.mw-ui-constructive.mw-ui-quiet:active,.mw-ui-button.mw-ui-constructive.mw-ui-quiet.mw-ui-checked{color:#008c6d}.mw-ui-button.mw-ui-constructive.mw-ui-quiet:disabled{color:#cccccc}.mw-ui-button.mw-ui-destructive{background:#d11d13;color:#fff;border:1px
+        solid #d11d13;text-shadow:0 1px
+        rgba(0,0,0,0.1)}.mw-ui-button.mw-ui-destructive:hover{background-color:#a7170f}.mw-ui-button.mw-ui-destructive:focus{border-color:#ffffff;box-shadow:0
+        0 0 1px
+        #a7170f;outline:none}.mw-ui-button.mw-ui-destructive:focus::-moz-focus-inner{border-color:transparent}.mw-ui-button.mw-ui-destructive:active,.mw-ui-button.mw-ui-destructive.mw-ui-checked{background:#a7170f;box-shadow:none}.mw-ui-button.mw-ui-destructive:disabled{background:#dddddd;border-color:#dddddd}.mw-ui-button.mw-ui-destructive:disabled:hover,.mw-ui-button.mw-ui-destructive:disabled:active,.mw-ui-button.mw-ui-destructive:disabled.mw-ui-checked{box-shadow:none}.mw-ui-button.mw-ui-destructive.mw-ui-quiet{color:#555555}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:hover,.mw-ui-button.mw-ui-destructive.mw-ui-quiet:focus{background:transparent;color:#d11d13}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:active,.mw-ui-button.mw-ui-destructive.mw-ui-quiet.mw-ui-checked{color:#a7170f}.mw-ui-button.mw-ui-destructive.mw-ui-quiet:disabled{color:#cccccc}.mw-ui-button.mw-ui-quiet{background:transparent;border:0;text-shadow:none;color:#555555}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet:focus{background:transparent;color:#555555}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet.mw-ui-checked{color:#777777}.mw-ui-button.mw-ui-quiet:disabled{color:#cccccc}.mw-ui-button.mw-ui-quiet:hover,.mw-ui-button.mw-ui-quiet:focus{box-shadow:none}.mw-ui-button.mw-ui-quiet:active,.mw-ui-button.mw-ui-quiet:disabled{background:transparent}a.mw-ui-button{text-decoration:none;line-height:normal}a.mw-ui-button:hover,a.mw-ui-button:focus{text-decoration:none}.mw-ui-button-group
+        > *{min-width:48px;border-radius:0;float:left}.mw-ui-button-group >
+        *:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px}.mw-ui-button-group >
+        *:not( :first-child ){border-left:0}.mw-ui-button-group >
+        *:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px}
+        .mw-ui-icon{position:relative;min-height:1.5em;min-width:1.5em}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.5em;min-width:3.5em;max-width:3.5em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0
+        1em}.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50%
+        50%;background-repeat:no-repeat;background-size:100%
+        auto;float:left;display:block;min-height:1.5em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.5em;margin-right:1em}
+        cite,dfn{font-style:inherit} q{quotes:'"' '"' "'" "'"} blockquote{overflow:hidden;margin:1em
+        0;padding:0 40px} strong.selflink{font-weight:700} .mw-body sub,.mw-body sup,span.reference
+        {font-size:80%} #interwiki-completelist{font-weight:bold}body.page-Main_Page
+        #ca-delete{display:none !important}body.page-Main_Page #mp-topbanner{clear:both}
+        .updatedmarker{background-color:transparent;color:#006400}
+        #toolbar{height:22px;margin-bottom:6px} #editpage-specialchars{display:none}
+        body.action-info :target,.citation:target{background-color:#DEF;
+        background-color:rgba(0,127,255,0.133)} .citation{word-wrap:break-word} @media
+        screen,handheld{.citation .printonly{display:none}}
+        ol.references,div.reflist,div.refbegin{font-size:90%;
+        margin-bottom:0.5em}div.refbegin-100{font-size:100%; }div.reflist
+        ol.references{font-size:100%; list-style-type:inherit; }
+        sup.reference{font-weight:normal;font-style:normal} span.brokenref{display:none}
+        div.columns{margin-top:0.3em}div.columns dl,div.columns ol,div.columns ul{margin-top:0}
+        .nocolbreak,div.columns li,div.columns dd
+        dd{-webkit-column-break-inside:avoid;page-break-inside:avoid;break-inside:avoid-column}
+        .flowlist ul{overflow-x:hidden;margin-left:0;padding-left:1.6em}.flowlist
+        ol{overflow-x:hidden;margin-left:0;padding-left:3.2em}.flowlist dl{overflow-x:hidden} .hlist
+        dl,.hlist ol,.hlist ul{margin:0;padding:0} .hlist dd,.hlist dt,.hlist
+        li{margin:0;display:inline} .hlist.inline,.hlist.inline dl,.hlist.inline ol,.hlist.inline
+        ul,.hlist dl dl,.hlist dl ol,.hlist dl ul,.hlist ol dl,.hlist ol ol,.hlist ol ul,.hlist ul
+        dl,.hlist ul ol,.hlist ul ul{display:inline} .hlist .mw-empty-li{display:none} .hlist
+        dt:after{content:":"}.hlist dd:after,.hlist li:after{content:" Â· ";font-weight:bold}.hlist
+        dd:last-child:after,.hlist dt:last-child:after,.hlist li:last-child:after{content:none}
+        .hlist dd dd:first-child:before,.hlist dd dt:first-child:before,.hlist dd
+        li:first-child:before,.hlist dt dd:first-child:before,.hlist dt dt:first-child:before,.hlist
+        dt li:first-child:before,.hlist li dd:first-child:before,.hlist li
+        dt:first-child:before,.hlist li li:first-child:before{content:" (";font-weight:normal}.hlist
+        dd dd:last-child:after,.hlist dd dt:last-child:after,.hlist dd li:last-child:after,.hlist dt
+        dd:last-child:after,.hlist dt dt:last-child:after,.hlist dt li:last-child:after,.hlist li
+        dd:last-child:after,.hlist li dt:last-child:after,.hlist li li:last-child:after{content:")
+        ";font-weight:normal} .hlist ol{counter-reset:listitem}.hlist ol >
+        li{counter-increment:listitem}.hlist ol > li:before{content:" " counter(listitem) "
+        ";white-space:nowrap}.hlist dd ol > li:first-child:before,.hlist dt ol >
+        li:first-child:before,.hlist li ol > li:first-child:before{content:" (" counter(listitem) "
+        "} .plainlist ol,.plainlist ul{line-height:inherit;list-style:none none;margin:0}.plainlist
+        ol li,.plainlist ul li{margin-bottom:0} .navbox{ border:1px solid
+        #aaa;width:100%;margin:auto;clear:both;font-size:88%;text-align:center;padding:1px}.navbox-inner,.navbox-subgroup{width:100%}.navbox-group,.navbox-title,.navbox-abovebelow{padding:0.25em
+        1em; line-height:1.5em;text-align:center}th.navbox-group{ white-space:nowrap;
+        text-align:right}.navbox,.navbox-subgroup{background:#fdfdfd;
+        }.navbox-list{line-height:1.5em;border-color:#fdfdfd; }.navbox
+        th,.navbox-title{background:#ccccff; }.navbox-abovebelow,th.navbox-group,.navbox-subgroup
+        .navbox-title{background:#ddddff; }.navbox-subgroup .navbox-group,.navbox-subgroup
+        .navbox-abovebelow{background:#e6e6ff; }.navbox-even{background:#f7f7f7;
+        }.navbox-odd{background:transparent; }table.navbox{margin-top:1em; }table.navbox
+        table.navbox{margin-top:0; }table.navbox + table.navbox{margin-top:-1px; }.navbox .hlist td
+        dl,.navbox .hlist td ol,.navbox .hlist td ul,.navbox td.hlist dl,.navbox td.hlist ol,.navbox
+        td.hlist ul{padding:0.125em 0; }
+        .navbar{display:inline;font-size:88%;font-weight:normal}.navbar
+        ul{display:inline;white-space:nowrap}.mw-body-content .navbar ul{line-height:inherit}.navbar
+        li{word-spacing:-0.125em}.navbar.mini li
+        abbr[title]{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}
+        .infobox .navbar{font-size:100%}.navbox .navbar{display:block;font-size:100%}.navbox-title
+        .navbar{ float:left; text-align:left; margin-right:0.5em;width:6em} .collapseButton{
+        float:right;font-weight:normal; margin-left:0.5em; text-align:right;width:auto} .navbox
+        .collapseButton{width:6em} .mw-collapsible-toggle{font-weight:normal;
+        text-align:right}.navbox .mw-collapsible-toggle{width:6em} .infobox{border:1px solid
+        #aaa;border-spacing:3px;background-color:#f9f9f9;color:black; margin:0.5em 0 0.5em
+        1em;padding:0.2em; float:right; clear:right;font-size:88%;line-height:1.5em}.infobox
+        caption{font-size:125%;font-weight:bold;padding:0.2em}.infobox td,.infobox
+        th{vertical-align:top;
+        text-align:left}.infobox.bordered{border-collapse:collapse}.infobox.bordered
+        td,.infobox.bordered th{border:1px solid #aaa}.infobox.bordered .borderless
+        td,.infobox.bordered .borderless
+        th{border:0}.infobox.sisterproject{width:20em;font-size:90%}.infobox.standard-talk{border:1px
+        solid #c0c090;background-color:#f8eaba}.infobox.standard-talk.bordered
+        td,.infobox.standard-talk.bordered th{border:1px solid #c0c090} .infobox.bordered
+        .mergedtoprow td,.infobox.bordered .mergedtoprow th{border:0;border-top:1px solid #aaa;
+        border-right:1px solid #aaa}.infobox.bordered .mergedrow td,.infobox.bordered .mergedrow
+        th{border:0; border-right:1px solid #aaa}
+        .infobox.geography{border-collapse:collapse;line-height:1.2em;font-size:90%}.infobox.geography
+        td,.infobox.geography th{border-top:1px solid #aaa;padding:0.4em 0.6em 0.4em
+        0.6em}.infobox.geography .mergedtoprow td,.infobox.geography .mergedtoprow th{border-top:1px
+        solid #aaa;padding:0.4em 0.6em 0.2em 0.6em}.infobox.geography .mergedrow
+        td,.infobox.geography .mergedrow th{border:0;padding:0 0.6em 0.2em 0.6em}.infobox.geography
+        .mergedbottomrow td,.infobox.geography .mergedbottomrow th{border-top:0;border-bottom:1px
+        solid #aaa;padding:0 0.6em 0.4em 0.6em}.infobox.geography .maptable td,.infobox.geography
+        .maptable th{border:0;padding:0} .wikitable.plainrowheaders
+        th[scope=row]{font-weight:normal; text-align:left} .wikitable td ul,.wikitable td
+        ol,.wikitable td dl{ text-align:left} .toc.hlist ul,#toc.hlist ul,.wikitable.hlist td
+        ul,.wikitable.hlist td ol,.wikitable.hlist td dl{text-align:inherit}
+        div.listenlist{background:url(//upload.wikimedia.org/wikipedia/commons/4/47/Sound-icon.svg)
+        no-repeat scroll 0 0 transparent;background-size:30px;padding-left:40px}
+        table.mw-hiero-table td{vertical-align:middle} div.medialist{min-height:50px;margin:1em;
+        background-position:top left;background-repeat:no-repeat}div.medialist
+        ul{list-style-type:none;list-style-image:none;margin:0}div.medialist ul
+        li{padding-bottom:0.5em}div.medialist ul li li{font-size:91%;padding-bottom:0} div#content
+        a[href$=".pdf"].external,div#content a[href*=".pdf?"].external,div#content
+        a[href*=".pdf#"].external,div#content a[href$=".PDF"].external,div#content
+        a[href*=".PDF?"].external,div#content a[href*=".PDF#"].external,div#mw_content
+        a[href$=".pdf"].external,div#mw_content a[href*=".pdf?"].external,div#mw_content
+        a[href*=".pdf#"].external,div#mw_content a[href$=".PDF"].external,div#mw_content
+        a[href*=".PDF?"].external,div#mw_content
+        a[href*=".PDF#"].external{background:url(//upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif)
+        no-repeat right; padding-right:18px} div#content span.PDFlink a,div#mw_content span.PDFlink
+        a{background:url(//upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif)
+        no-repeat right; padding-right:18px} div.columns-2 div.column{
+        float:left;width:50%;min-width:300px}div.columns-3 div.column{
+        float:left;width:33.3%;min-width:200px}div.columns-4 div.column{
+        float:left;width:25%;min-width:150px}div.columns-5 div.column{
+        float:left;width:20%;min-width:120px} .messagebox{border:1px solid
+        #aaa;background-color:#f9f9f9;width:80%;margin:0 auto 1em
+        auto;padding:.2em}.messagebox.merge{border:1px solid
+        #c0b8cc;background-color:#f0e5ff;text-align:center}.messagebox.cleanup{border:1px solid
+        #9f9fff;background-color:#efefff;text-align:center}.messagebox.standard-talk{border:1px
+        solid #c0c090;background-color:#f8eaba;margin:4px auto} .mbox-inside
+        .standard-talk,.messagebox.nested-talk{border:1px solid
+        #c0c090;background-color:#f8eaba;width:100%;margin:2px
+        0;padding:2px}.messagebox.small{width:238px;font-size:85%; float:right;clear:both; margin:0
+        0 1em 1em;line-height:1.25em}.messagebox.small-talk{width:238px;font-size:85%;
+        float:right;clear:both; margin:0 0 1em 1em;line-height:1.25em;background:#F8EABA}
+        th.mbox-text,td.mbox-text{ border:none; padding:0.25em 0.9em; width:100%; }td.mbox-image{
+        border:none; padding:2px 0 2px 0.9em; text-align:center}td.mbox-imageright{ border:none;
+        padding:2px 0.9em 2px 0; text-align:center}td.mbox-empty-cell{
+        border:none;padding:0;width:1px} table.ambox{margin:0 10%; border:1px solid #aaa;
+        border-left:10px solid #1e90ff; background:#fbfbfb}table.ambox + table.ambox{
+        margin-top:-1px}.ambox th.mbox-text,.ambox td.mbox-text{ padding:0.25em 0.5em; }.ambox
+        td.mbox-image{ padding:2px 0 2px 0.5em; }.ambox td.mbox-imageright{ padding:2px 0.5em 2px 0;
+        }table.ambox-notice{ border-left:10px solid #1e90ff; }table.ambox-speedy{ border-left:10px
+        solid #b22222; background:#fee; }table.ambox-delete{ border-left:10px solid #b22222;
+        }table.ambox-content{ border-left:10px solid #f28500; }table.ambox-style{ border-left:10px
+        solid #f4c430; }table.ambox-move{ border-left:10px solid #9932cc; }table.ambox-protection{
+        border-left:10px solid #bba; } table.imbox{margin:4px
+        10%;border-collapse:collapse;border:3px solid #1e90ff; background:#fbfbfb}.imbox .mbox-text
+        .imbox{ margin:0 -0.5em; display:block; }.mbox-inside .imbox{
+        margin:4px}table.imbox-notice{border:3px solid #1e90ff; }table.imbox-speedy{border:3px solid
+        #b22222; background:#fee; }table.imbox-delete{border:3px solid #b22222;
+        }table.imbox-content{border:3px solid #f28500; }table.imbox-style{border:3px solid #f4c430;
+        }table.imbox-move{border:3px solid #9932cc; }table.imbox-protection{border:3px solid #bba;
+        }table.imbox-license{border:3px solid #88a; background:#f7f8ff;
+        }table.imbox-featured{border:3px solid #cba135; } table.cmbox{margin:3px
+        10%;border-collapse:collapse;border:1px solid #aaa;background:#DFE8FF;
+        }table.cmbox-notice{background:#D8E8FF;
+        }table.cmbox-speedy{margin-top:4px;margin-bottom:4px;border:4px solid #b22222;
+        background:#FFDBDB; }table.cmbox-delete{background:#FFDBDB;
+        }table.cmbox-content{background:#FFE7CE; }table.cmbox-style{background:#FFF9DB;
+        }table.cmbox-move{background:#E4D8FF; }table.cmbox-protection{background:#EFEFE1; }
+        table.ombox{margin:4px 10%;border-collapse:collapse;border:1px solid #aaa;
+        background:#f9f9f9}table.ombox-notice{border:1px solid #aaa; }table.ombox-speedy{border:2px
+        solid #b22222; background:#fee; }table.ombox-delete{border:2px solid #b22222;
+        }table.ombox-content{border:1px solid #f28500; }table.ombox-style{border:1px solid #f4c430;
+        }table.ombox-move{border:1px solid #9932cc; }table.ombox-protection{border:2px solid #bba; }
+        table.tmbox{margin:4px 10%;border-collapse:collapse;border:1px solid #c0c090;
+        background:#f8eaba}.mediawiki .mbox-inside .tmbox{ margin:2px 0; width:100%; }.mbox-inside
+        .tmbox.mbox-small{ line-height:1.5em; font-size:100%; }table.tmbox-speedy{border:2px solid
+        #b22222; background:#fee; }table.tmbox-delete{border:2px solid #b22222;
+        }table.tmbox-content{border:2px solid #f28500; }table.tmbox-style{border:2px solid #f4c430;
+        }table.tmbox-move{border:2px solid #9932cc;
+        }table.tmbox-protection,table.tmbox-notice{border:1px solid #c0c090; }
+        table.dmbox{clear:both;margin:0.9em 1em;border-top:1px solid #ccc;border-bottom:1px solid
+        #ccc;background:transparent} table.fmbox{clear:both;margin:0.2em 0;width:100%;border:1px
+        solid #aaa;background:#f9f9f9;
+        }table.fmbox-system{background:#f9f9f9}table.fmbox-warning{border:1px solid #bb7070;
+        background:#ffdbdb; }table.fmbox-editnotice{background:transparent}
+        div.mw-warning-with-logexcerpt,div.mw-lag-warn-high,div.mw-cascadeprotectedwarning,div#mw-protect-cascadeon,div.titleblacklist-warning,div.locked-warning{clear:both;margin:0.2em
+        0;border:1px solid #bb7070;background:#ffdbdb;padding:0.25em 0.9em}
+        div.mw-lag-warn-normal,div.fmbox-system{clear:both;margin:0.2em 0;border:1px solid
+        #aaa;background:#f9f9f9;padding:0.25em 0.9em} body.mediawiki table.mbox-small{ clear:right;
+        float:right; margin:4px 0 4px
+        1em;width:238px;font-size:88%;line-height:1.25em}body.mediawiki table.mbox-small-left{
+        margin:4px 1em 4px 0;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}
+        .compact-ambox table .mbox-image,.compact-ambox table .mbox-imageright,.compact-ambox table
+        .mbox-empty-cell{display:none} .compact-ambox
+        table.ambox{border:none;border-collapse:collapse;background:transparent;margin:0 0 0 1.6em
+        !important;padding:0 !important;width:auto;display:block}body.mediawiki .compact-ambox
+        table.mbox-small-left{font-size:100%;width:auto;margin:0} .compact-ambox table
+        .mbox-text{padding:0 !important;margin:0 !important}.compact-ambox table
+        .mbox-text-span{display:list-item;line-height:1.5em;list-style-type:square;list-style-image:url(//en.wikipedia.org/w/skins/MonoBook/bullet.gif)}.skin-vector
+        .compact-ambox table
+        .mbox-text-span{list-style-type:disc;list-style-image:url(//en.wikipedia.org/w/skins/Vector/images/bullet-icon.svg);list-style-image:url(//en.wikipedia.org/w/skins/Vector/images/bullet-icon.png)\9}
+        .compact-ambox .hide-when-compact{display:none}
+        div.noarticletext{border:none;background:transparent;padding:0}
+        .visualhide{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+        #wpSave{font-weight:bold} .hiddenStructure{display:inline
+        !important;color:#f00;background-color:#0f0} .check-icon a.new{display:none;speak:none}
+        .nounderlines a,.IPA a:link,.IPA a:visited{text-decoration:none !important}
+        div.NavFrame{margin:0;padding:4px;border:1px solid
+        #aaa;text-align:center;border-collapse:collapse;font-size:95%}div.NavFrame +
+        div.NavFrame{border-top-style:none;border-top-style:hidden}div.NavPic{background-color:#fff;margin:0;padding:2px;
+        float:left}div.NavFrame
+        div.NavHead{line-height:1.6em;font-weight:bold;background-color:#ccf;position:relative}div.NavFrame
+        p,div.NavFrame div.NavContent,div.NavFrame div.NavContent
+        p{font-size:100%}div.NavEnd{margin:0;padding:0;line-height:1px;clear:both}a.NavToggle{position:absolute;top:0;
+        right:3px;font-weight:normal;font-size:90%} .hatnote{font-style:italic}.hatnote
+        i{font-style:normal}div.hatnote{ padding-left:1.6em;margin-bottom:0.5em}div.hatnote +
+        div.hatnote{margin-top:-0.5em} .listify td{display:list-item}.listify
+        tr{display:block}.listify table{display:block}
+        .geo-default,.geo-dms,.geo-dec{display:inline}.geo-nondefault,.geo-multi-punct{display:none}.longitude,.latitude{white-space:nowrap}
+        .hlist .tocnumber,.hlist .toctext{display:inline} .nonumtoc
+        .tocnumber{display:none}.nonumtoc #toc ul,.nonumtoc .toc
+        ul{line-height:1.5em;list-style:none none;margin:.3em 0 0;padding:0}.hlist.nonumtoc #toc ul
+        ul,.hlist.nonumtoc .toc ul ul{ margin:0} .toclimit-2 .toclevel-1 ul,.toclimit-3 .toclevel-2
+        ul,.toclimit-4 .toclevel-3 ul,.toclimit-5 .toclevel-4 ul,.toclimit-6 .toclevel-5
+        ul,.toclimit-7 .toclevel-6 ul{display:none} blockquote.templatequote
+        div.templatequotecite{line-height:1.5em; text-align:left; padding-left:1.6em;margin-top:0}
+        div.user-block{padding:5px;margin-bottom:0.5em;border:1px solid
+        #A9A9A9;background-color:#FFEFD5} .nowrap,.nowraplinks a,.nowraplinks
+        .selflink,sup.reference a{white-space:nowrap}.nowrap pre{white-space:pre} .wrap,.wraplinks
+        a{white-space:normal} .template-documentation{clear:both;margin:1em 0 0 0;border:1px solid
+        #aaa;background-color:#ecfcf4;padding:1em} .imagemap-inline div{display:inline}
+        #wpUploadDescription{height:13em} .thumbinner{min-width:100px} div.thumb
+        .thumbimage{background-color:#fff} div#content .gallerybox div.thumb{
+        background-color:#F9F9F9} .gallerybox .thumb img{background:#fff
+        url(//upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png) repeat} .ns-0
+        .gallerybox .thumb img,.ns-2 .gallerybox .thumb img,.ns-100 .gallerybox .thumb
+        img,.nochecker .gallerybox .thumb img{background:#fff}
+        #mw-subcategories,#mw-pages,#mw-category-media,#filehistory,#wikiPreview,#wikiDiff{clear:both}body.rtl
+        #mw-articlefeedbackv5,body.rtl #mw-articlefeedback{display:block; margin-bottom:1em;
+        clear:right; float:right; } .wpb .wpb-header{display:none}.wpbs-inner .wpb
+        .wpb-header{display:block} .wpbs-inner .wpb .wpb-header{display:table-row} .wpbs-inner
+        .wpb-outside{display:none} .mw-tag-markers{font-style:italic;font-size:90%}
+        .sysop-show,.accountcreator-show,.templateeditor-show,.autoconfirmed-show{display:none}
+        .ve-ui-mwNoticesPopupTool-item .editnotice-redlink,.mw-ve-editNotice
+        .editnotice-redlink{display:none !important} ul.permissions-errors > li{list-style:none
+        none}ul.permissions-errors{margin:0} body.page-Special_UserLogin .mw-label
+        label,body.page-Special_UserLogin_signup .mw-label label{white-space:nowrap}
+        .transborder{border:solid transparent}* html .transborder{ border:solid
+        #000001;filter:chroma(color=#000001)} .times-serif,span.texhtml{font-family:"Nimbus Roman
+        No9 L","Times New
+        Roman",Times,serif;font-size:118%;line-height:1}span.texhtml{white-space:nowrap}span.texhtml
+        span.texhtml{font-size:100%}span.mwe-math-mathml-inline{font-size:118%}
+        .digits,.texhtml{-moz-font-feature-settings:"lnum","tnum","kern"
+        0;-webkit-font-feature-settings:"lnum","tnum","kern"
+        0;font-feature-settings:"lnum","tnum","kern" 0;font-variant-numeric:lining-nums
+        tabular-nums;font-kerning:none}
+        .mwe-math-fallback-image-display,.mwe-math-mathml-display{margin-left:1.6em
+        !important;margin-top:0.6em;margin-bottom:0.6em}.mwe-math-mathml-display
+        math{display:inline}
+        table#mw-prefixindex-list-table,table#mw-prefixindex-nav-table{width:98%}
+        .portal-column-left{float:left;width:50%}.portal-column-right{float:right;width:49%}.portal-column-left-wide{float:left;width:60%}.portal-column-right-narrow{float:right;width:39%}.portal-column-left-extra-wide{float:left;width:70%}.portal-column-right-extra-narrow{float:right;width:29%}@media
+        only screen and (max-width:800px){
+        .portal-column-left,.portal-column-right,.portal-column-left-wide,.portal-column-right-narrow,.portal-column-left-extra-wide,.portal-column-right-extra-narrow{float:inherit;width:inherit}}
+        #bodyContent
+        .letterhead{background-image:url(//upload.wikimedia.org/wikipedia/commons/e/e0/Tan-page-corner.png);background-repeat:no-repeat;padding:2em;background-color:#faf9f2}
+        .treeview ul{padding:0;margin:0}.treeview
+        li{padding:0;margin:0;list-style-type:none;list-style-image:none;zoom:1;}.treeview li
+        li{background:url(//upload.wikimedia.org/wikipedia/commons/f/f2/Treeview-grey-line.png)
+        no-repeat 0 -2981px; padding-left:20px;text-indent:0.3em}.treeview li
+        li.lastline{background-position:0 -5971px }.treeview li.emptyline > ul{
+        margin-left:-1px}.treeview li.emptyline > ul > li:first-child{background-position:0 9px } td
+        .sortkey,th .sortkey{display:none;speak:none} .inputbox-hidecheckboxes form
+        .inputbox-element{display:none !important} .k-player .k-attribution{visibility:hidden}
+        .PopUpMediaTransform a .play-btn-large{margin:0;top:auto;right:auto;bottom:0;left:0}
+        .mw-ve-editNotice .mbox-image{display:none}
+        .page-Main_Page #deleteconfirm,.page-Main_Page #t-cite,.page-Main_Page
+        #footer-info-lastmod,.action-view.page-Main_Page #siteSub,.action-view.page-Main_Page
+        #contentSub,.action-view.page-Main_Page .firstHeading{display:none !important}
+        #coordinates{position:absolute;top:0;right:0;float:right;margin:0;padding:0;line-height:1.5em;text-align:right;text-indent:0;font-size:85%;text-transform:none;white-space:nowrap}
+        div.flaggedrevs_short{position:absolute;top:-3em;right:100px;z-index:1} div.vectorMenu
+        div{z-index:2} #siteSub{display:block;font-size:92%} .mw-body
+        .mw-indicators{padding-top:0.4em}
+        @media print {
+        .ns-0 .ambox,.ns-0 .navbox,.ns-0 .vertical-navbox,.ns-0 .infobox.sisterproject,.ns-0
+        .hatnote,.ns-0 .dablink,.ns-0
+        .metadata,.editlink,.navbar,a.NavToggle,span.collapseButton,span.mw-collapsible-toggle,th
+        .sortkey,td .sortkey{display:none !important} #content cite
+        a.external.text:after,.nourlexpansion a.external.text:after,.nourlexpansion
+        a.external.autonumber:after{display:none !important} table.collapsible
+        tr,div.NavPic,div.NavContent{display:block !important}table.collapsible tr{display:table-row
+        !important} #firstHeading{margin:0} #content a.external.text:after,#content
+        a.external.autonumber:after{word-wrap:break-word}}
+    </style>
+    <style>
+        .suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions
+        a.mw-searchSuggest-link:active,.suggestions
+        a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current
+        a.mw-searchSuggest-link,.suggestions-result-current
+        a.mw-searchSuggest-link:hover,.suggestions-result-current
+        a.mw-searchSuggest-link:active,.suggestions-result-current
+        a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link
+        .special-query{ overflow:hidden;-o-text-overflow:ellipsis;
+        text-overflow:ellipsis;white-space:nowrap}
+        .mw-mmv-overlay{position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:1000;background-color:#000000}body.mw-mmv-lightbox-open{overflow-y:auto}body.mw-mmv-lightbox-open
+        #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open
+        #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open
+        #footer,body.mw-mmv-lightbox-open #globalWrapper{ display:none}body.mw-mmv-lightbox-open >
+        *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open >
+        .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons
+        .mw-mmv-view-expanded,.mw-mmv-filepage-buttons
+        .mw-mmv-view-config{display:block}.mw-mmv-filepage-buttons
+        .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%20768%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22%23777%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M851.2%2071.6L690.7%20232.1l-40.1-40.3-9.6%20164.8%20164.8-9.3-40.3-40.4L926%20146.4l58.5%2058.5L997.6%200%20792.7%2013.1%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M769.6%2089.3H611.9l70.9%2070.8%207.9%207.5m-47.1%20234.6l-51.2%203%203-51.2%209.4-164.4%205.8-100.3H26.4V768h883.1V387l-100.9%205.8-165%209.4zM813.9%20678H113.6l207.2-270.2%2031.5-12.9L548%20599.8l105.9-63.2%20159.8%20140.8.2.6zm95.6-291.9V228l-79.1%2078.9%207.8%207.9%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A);background-image:url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/MultimediaViewer/resources/mmv/img/expand.svg?b714e)!ie}.mw-mmv-filepage-buttons
+        .mw-mmv-view-config.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%20768%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M897%20454.6V313.4L810.4%20299c-6.4-23.3-16-45.7-27.3-65.8l50.5-71.4-99.4-100.2-71.4%2050.5c-20.9-11.2-42.5-20.9-65.8-27.3L582.6-1H441.4L427%2085.6c-23.3%206.4-45.7%2016-65.8%2027.3l-71.4-50.5-100.3%2099.5%2050.5%2071.4c-11.2%2020.9-20.9%2042.5-27.3%2066.6L127%20313.4v141.2l85.8%2014.4c6.4%2023.3%2016%2045.7%2027.3%2066.6L189.6%20607l99.5%2099.5%2071.4-50.5c20.9%2011.2%2042.5%2020.9%2066.6%2027.3l14.4%2085.8h141.2l14.4-86.6c23.3-6.4%2045.7-16%2065.8-27.3l71.4%2050.5%2099.5-99.5-50.5-71.4c11.2-20.9%2020.9-42.5%2027.3-66.6l86.4-13.6zm-385%2077c-81.8%200-147.6-66.6-147.6-147.6%200-81.8%2066.6-147.6%20147.6-147.6S659.6%20302.2%20659.6%20384%20593.8%20531.6%20512%20531.6z%22%20fill%3D%22%23777%22%2F%3E%0A%3C%2Fsvg%3E%0A);background-image:url(//en.wikipedia.org/static/1.27.0-wmf.12/extensions/MultimediaViewer/resources/mmv/img/gear_gray.svg?330ae)!ie;opacity:0.75}.mw-mmv-filepage-buttons
+        .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}
+    </style>
+    <meta name="ResourceLoaderDynamicStyles" content="">
+    <link rel="stylesheet"
+          href="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/load(1).php">
+    <script async=""
+            src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/load(2).php"></script>
+    <meta name="generator" content="MediaWiki 1.27.0-wmf.12">
+    <link rel="alternate"
+          href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Tic-tac-toe">
+    <link rel="alternate" type="application/x-wiki" title="Edit this page"
+          href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit">
+    <link rel="edit" title="Edit this page"
+          href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit">
+    <link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png">
+    <link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico">
+    <link rel="search" type="application/opensearchdescription+xml"
+          href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+    <link rel="EditURI" type="application/rsd+xml"
+          href="https://en.wikipedia.org/w/api.php?action=rsd">
+    <link rel="copyright" href="https://creativecommons.org/licenses/by-sa/3.0/">
+    <link rel="canonical" href="https://en.wikipedia.org/wiki/Tic-tac-toe">
+    <link rel="dns-prefetch" href="https://meta.wikimedia.org/">
+    <!--[if lt IE 7]>
+    <style type="text/css">
+        body{behavior:url("/w/static/1.27.0-wmf.12/skins/Vector/csshover.min.htc")}
+    </style><![endif]-->
+    <script data-type="injected"
+            src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/se_js.php"></script>
+    <script src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/load(3).php"></script>
+    <link rel="stylesheet" type="text/css"
+          href="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/min_search_engine_v2.css">
+    <script src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/adframe.js"
+            type="text/javascript"></script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Tic-tac-toe skin-vector action-view">
+
+<h2>Not displaying the images to keep the app light</h2>
+
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+    <a id="top"></a>
+
+    <div id="siteNotice">
+        <div id="centralNotice"></div>
+        <!-- CentralNotice --></div>
+    <div class="mw-indicators">
+    </div>
+    <h1 id="firstHeading" class="firstHeading" lang="en">Tic-tac-toe</h1>
+
+    <div class="priam_full_width">
+        <div id="priam_top_ads"
+             class="priam_ads priam_searchengine priam_wikipedia priam_close_ads priam_ads_x_1 priam priam_google"
+             data-pos="top" style="width: 950px;">
+            <div class="priam_ads_info wikipedia">
+                <h2 class="priam_ads_title" id="priam_top_ads_title">
+                    <div style="float: right; width:88px"><span class="priam_ad_icon2"
+                                                                style="float: left; font-size: 12px !important">Wajam Ads</span><a
+                            style="float: left; text-decoration: none;"
+                            href="https://www.technologiesaintjoseph.com/settings/ads?affiliate_id=9860">
+                        <div class="priam_ads_info_label"></div>
+                    </a></div>
+                </h2>
+            </div>
+            <div class="priam_ads_content priam_wikipedia">
+                <div class="priam_old_ad_wrapper priam_single_ad priam_whitespace_clickable"
+                     data-fid="19" style="">
+                    <a href="https://technologiesaintjoseph.com/sda_redirect.php?aid=9860&amp;v=d1.58.10.8&amp;feed=19&amp;uadid=145518574309111424&amp;position=top&amp;ret=0&amp;ret_timestamp=0&amp;ret_count=0&amp;keywords=Tic-tac-toe&amp;url=http%3A%2F%2Fr.search.yahoo.com%2Fcbclk%2FdWU9NjA0MjZCQjgzNjc1NEYzOSZ1dD0xNDU1MTg1NzQzNzAxJnVvPTg5Mzg3ODE1NTcmbHQ9Mg--%2FRV%3D2%2FRE%3D1455214543%2FRO%3D10%2FRU%3Dhttp%253a%252f%252f36001507.r.msn.com%252f%253fld%253dd3y0wMjYCal7dCgVBniQIf_TVUCUyFMZ_p7ZF9uDxru8I_zE5VCnMIl5SZ8WwOsewsVQVB_8zRj1SHQg-wT6QfrNjD2adXmK5Ti-gfFlK60xpXT3iES4chpAAi9h2IaATAi_kzAgbkjMUFchdmxj1CHlUdlqU%2526u%253dwww.tradsrvr.com%25252fms%25252fgames%25252f%25253fgeo%25253din%252526theme%25253dmulti%252526s1%25253dbing_indgames-broad%2FRK%3D0%2FRS%3DMMsT.agEnKJ72cUkcRa9MuIf.wA-&amp;se=wikipedia&amp;unique_id=F5C83EB019E142E9870D10087F631457&amp;install_timestamp=1443463419&amp;search_id=145518573902384290"
+                       id="priam_ads_no_0" class="top ads priam_old_ad">
+                        <div class="priam_ad_wrapper">
+                            <h3 id="priam_ads_no_0_title"
+                                class="priam_ads_top_title priam_clickable">What Is <b>Tic</b> <b>Tac</b>
+                                <b>Toe</b></h3>
+                            <br>
+
+                            <div id="priam_ads_no_0_url" class="priam_clickable priam_ads_url"
+                                 style="display: inline;">
+                                <cite>www.ActionClassicGames.com</cite>
+                            </div>
+                            <br>
+
+                            <div class="priam_ads_description priam_clickable"
+                                 id="priam_ads_no_0_description" style="display:inline;">
+                                What Is <b>Tic</b> <b>Tac</b> <b>Toe</b>, We Have It. Free Action
+                                Classic Games App
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="priam_site_links_one_column" style="top: 0;"></div>
+                </div>
+                <div class="priam_old_ad_wrapper priam_single_ad priam_whitespace_clickable"
+                     data-fid="19" style="">
+                    <a href="https://technologiesaintjoseph.com/sda_redirect.php?aid=9860&amp;v=d1.58.10.8&amp;feed=19&amp;uadid=145518574309187136&amp;position=top&amp;ret=0&amp;ret_timestamp=0&amp;ret_count=0&amp;keywords=Tic-tac-toe&amp;url=http%3A%2F%2Fr.search.yahoo.com%2Fcbclk%2FdWU9NjA0MjZCQjgzNjc1NEYzOSZ1dD0xNDU1MTg1NzQzNzAxJnVvPTk3ODkwMDQ1NzUmbHQ9Mg--%2FRV%3D2%2FRE%3D1455214543%2FRO%3D10%2FRU%3Dhttp%253a%252f%252f0.r.msn.com%252f%253fld%253dd38XZOxbn0i4oXVJFHWQ4SKDVUCUxSVia3KkZ0oZXcknUKYXq_JfZav7DGYuJoLfbNGTfH5t9brAV8yxlS0ggCd9x9NYYTvBkk9z_ACxE0EBXsKpuSjXJYbLPmQ6fU1iQudUQEiPXYRiJ9XPKxTYDFjlXc6us%2526u%253dwww.india.com%25252fwhatever%25252ffacebook-logos-true-meaning-will-freak-you-out-897784%25252f%25253futm_source%25253dyahoo%252526utm_medium%25253dcpc%252526utm_campaign%25253dEntertainment-Y%2FRK%3D0%2FRS%3D3nTtoXiikj2jPWA5nhrNNdeF.e8-&amp;se=wikipedia&amp;unique_id=F5C83EB019E142E9870D10087F631457&amp;install_timestamp=1443463419&amp;search_id=145518573902384290"
+                       id="priam_ads_no_1" class="top ads priam_old_ad">
+                        <div class="priam_ad_wrapper">
+                            <h3 id="priam_ads_no_1_title"
+                                class="priam_ads_top_title priam_clickable"><b>Tic</b> <b>Tac</b>
+                                <b>Toe</b></h3>
+                            <br>
+
+                            <div id="priam_ads_no_1_url" class="priam_clickable priam_ads_url"
+                                 style="display: inline;">
+                                <cite>www.india.com</cite>
+                            </div>
+                            <br>
+
+                            <div class="priam_ads_description priam_clickable"
+                                 id="priam_ads_no_1_description" style="display:inline;">
+                                Breaking News, Bollywood, Cricket,&nbsp;National, Intl and More!
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="priam_site_links_one_column" style="top: 0;"></div>
+                </div>
+                <div class="priam_old_ad_wrapper priam_single_ad priam_whitespace_clickable"
+                     data-fid="19" style="">
+                    <a href="https://technologiesaintjoseph.com/sda_redirect.php?aid=9860&amp;v=d1.58.10.8&amp;feed=19&amp;uadid=145518574309102272&amp;position=top&amp;ret=0&amp;ret_timestamp=0&amp;ret_count=0&amp;keywords=Tic-tac-toe&amp;url=http%3A%2F%2Fr.search.yahoo.com%2Fcbclk%2FdWU9NjA0MjZCQjgzNjc1NEYzOSZ1dD0xNDU1MTg1NzQzNzAxJnVvPTk0MDk5MTk5NDkmbHQ9Mg--%2FRV%3D2%2FRE%3D1455214543%2FRO%3D10%2FRU%3Dhttp%253a%252f%252f44000091.r.msn.com%252f%253fld%253dd32IkFeJZejPVbOkMiTZ7xajVUCUyQ-AlXfFVcEzUjB03HS7AKliZJFXhMoMgNzVR5lMHiYbCkbNPPmghYx8m3YO3Qm9Vq1ytjD-mt3fRBdcSObnOe-CP_iH2dIFODSAmKIiAtxTvcTztj7Hxfk_bYuzvKoZU%2526u%253dhttp%25253a%25252f%25252f5231.xg4ken.com%25252fmedia%25252fredir.php%25253fprof%25253d451%252526camp%25253d1926%252526affcode%25253dkw22153%252526k_inner_url_encoded%25253d0%252526cid%25253d9409919949%252526queryStr%25253dtic%25252520tac%25252520toe%252526url%25255b%25255d%25253dhttp%25253a%25252f%25252fwww.amazon.in%25252fs%25252f%25253fie%25253dUTF8%252526keywords%25253dtic%25252btac%25252btoe%252526index%25253dtoys%252526ref%25253dpd_sl_2sknb8v4ry_e%252526tag%25253dyhooinkenshoo-21%252526ascsubtag%25253d_kenshoo_clickid_%2FRK%3D0%2FRS%3DxAZvgx3AHk6oKfAT0fHuATo4VvI-&amp;se=wikipedia&amp;unique_id=F5C83EB019E142E9870D10087F631457&amp;install_timestamp=1443463419&amp;search_id=145518573902384290"
+                       id="priam_ads_no_2" class="top ads priam_old_ad">
+                        <div class="priam_ad_wrapper">
+                            <h3 id="priam_ads_no_2_title"
+                                class="priam_ads_top_title priam_clickable">Buy Games at Amazon</h3>
+                            <br>
+
+                            <div id="priam_ads_no_2_url" class="priam_clickable priam_ads_url"
+                                 style="display: inline;">
+                                <cite>amazon.in/games</cite>
+                            </div>
+                            <br>
+
+                            <div class="priam_ads_description priam_clickable"
+                                 id="priam_ads_no_2_description" style="display:inline;">
+                                Low Prices on Thousands of Games. Free Shipping. Cash on Delivery.
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="priam_site_links_one_column" style="top: 0;"></div>
+                </div>
+                <div class="priam_old_ad_wrapper priam_single_ad priam_whitespace_clickable"
+                     data-fid="19" style="margin-bottom: 10px">
+                    <a href="https://technologiesaintjoseph.com/sda_redirect.php?aid=9860&amp;v=d1.58.10.8&amp;feed=19&amp;uadid=145518574309142016&amp;position=top&amp;ret=0&amp;ret_timestamp=0&amp;ret_count=0&amp;keywords=Tic-tac-toe&amp;url=http%3A%2F%2Fr.search.yahoo.com%2Fcbclk%2FdWU9NjA0MjZCQjgzNjc1NEYzOSZ1dD0xNDU1MTg1NzQzNzAxJnVvPTk3NzAwODUwMzEmbHQ9Mg--%2FRV%3D2%2FRE%3D1455214543%2FRO%3D10%2FRU%3Dhttp%253a%252f%252f0.r.msn.com%252f%253fld%253dd3JvnnNRAHLuHwNua7bwNHNjVUCUz3opDsRP4cme0_zHNZC8qVS0vqteEN0KzClxURdnFzt3D6QOgtPFrjjtZNkac4JeZ8aWsCAhzax1uzZIu1zUOBmgnYPk_u3S0p_DAOuexnmSHdkZVHaLAOK-r9FFkph2k%2526u%253dtimesofindia.indiatimes.com%25253futm_source%25253dbing%252526utm_medium%25253dcpc%252526utm_campaign%25253dDay.in-S%2525252BCn%252526utm_term%25253dtic%25252520tac%25252520toe%252526utm_content%25253dKW75%2FRK%3D0%2FRS%3D6jmiFvhOezxYQawrsAezQmHEum0-&amp;se=wikipedia&amp;unique_id=F5C83EB019E142E9870D10087F631457&amp;install_timestamp=1443463419&amp;search_id=145518573902384290"
+                       id="priam_ads_no_3" class="top ads priam_old_ad">
+                        <div class="priam_ad_wrapper">
+                            <h3 id="priam_ads_no_3_title"
+                                class="priam_ads_top_title priam_clickable">Times Of India News</h3>
+                            <br>
+
+                            <div id="priam_ads_no_3_url" class="priam_clickable priam_ads_url"
+                                 style="display: inline;">
+                                <cite>timesofindia.indiatimes.com</cite>
+                            </div>
+                            <br>
+
+                            <div class="priam_ads_description priam_clickable"
+                                 id="priam_ads_no_3_description" style="display:inline;">
+                                Get Latest updates on News Online. Best News Site. View Now!
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="priam_site_links_one_column" style="top: 0;"></div>
+                </div>
+
+                <style type="text/css">
+                    .priam_clickable {cursor: pointer;}
+
+                    a.priam_old_ad {
+                    display: block;
+                    }
+
+                    .priam.ads .ads {
+                    padding-bottom: 0;
+                    }
+
+                    .top.ads.priam_old_ad {
+                    margin-bottom: 0;
+                    }
+
+                    .priam_old_ad_wrapper {
+                    margin-bottom: 15px;
+                    }
+
+                    .priam_ads_description a:link,.priam_ads_description a:visited {
+                    color: #222;
+                    }
+
+                    a.priam_ads_url:link,a.priam_ads_url:visited {
+                    color: #093;
+                    }
+                </style>
+                <div id="priam_logged" style="display: none;"></div>
+                <iframe src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/sda_tracking.html"
+                        style="display:none;"></iframe>
+            </div>
+            <div class="priam_ads_footer">
+                <div class="priam_ads_footer_wrapper">
+                    <div class="priam_ads_footer_content_left">See recommendations from your
+                        friends: <a href="https://en.wikipedia.org/wiki/Tic-tac-toe#"
+                                    onclick="location.href=&#39;https://www.technologiesaintjoseph.com/signup/facebookAuth?origin=7&amp;sid=145518573902384290&amp;from_external=&#39; + escape(location.href);return false;"
+                                    style="color: #1122CC; text-decoration: none;">Facebook</a> | <a
+                                href="https://en.wikipedia.org/wiki/Tic-tac-toe#"
+                                onclick="location.href=&#39;https://www.technologiesaintjoseph.com/signup/twitterAuth?origin=7&amp;sid=145518573902384290&amp;from_external=&#39; + escape(location.href);return false;"
+                                style="color: #1122CC; text-decoration: none;">Twitter</a></div>
+                    <div class="priam_ads_footer_wrapper_right">
+                        <div class="priam_ads_x">x</div>
+                        <div class="priam_ads_footer_content_right">
+                            <div class="priam_footer_arrow">
+                                <ul>
+                                    <li><a target="_blank"
+                                           href="http://www.technologiesaintjoseph.com/frequently-asked-questions">help</a>
+                                    </li>
+                                    <li><a target="_blank"
+                                           href="http://www.technologiesaintjoseph.com/privacy">privacy</a>
+                                    </li>
+                                    <li><a target="_blank"
+                                           href="http://www.technologiesaintjoseph.com/terms-of-service">terms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="priam_footer_logo"
+                                 style="background: url(&#39;https://staticwajam-wajam.netdna-ssl.com/imgs/common/wajam-sprites.png&#39;) -420px -35px; width: 45px; height: 9px; margin-top: 3px"></div>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="priam_wrapper" class="wikipedia priam_wikipedia" style="display: none;">
+            <div id="priam_container" class="priam_not_logged priam_border_container">
+                <div class="priam_close">Ã—</div>
+                <div class="clear"></div>
+                <div class="priam_big_logo_wrapper">
+                    <div class="priam_big_logo"></div>
+                </div>
+                <div class="clear"></div>
+                <div id="priam_not_logged_loader"
+                     style="display:none;text-align: center;color:#999;font-size: 16px;"><span>loading...</span>
+                </div>
+                <div id="priam_content_header" style="font-size: small">Sign into your Wajam account
+                    and discover what your friends have shared <span
+                            style="display:none;">about "<strong></strong>"</span></div>
+                <div id="priam_results">
+                    <div class="priam_right"><a id="priam_signup_twitter1" class="priam_signup_link"
+                                                href="https://www.technologiesaintjoseph.com/signup/twitterAuth">
+                        <div class="priam_logo_wrapper"><span class="priam_icon"></span></div>
+                        Twitter</a></div>
+                    <div class="priam_left"><a id="priam_signup_facebook1" class="priam_signup_link"
+                                               href="https://www.technologiesaintjoseph.com/signup/facebookAuth">
+                        <div class="priam_logo_wrapper"><span class="priam_icon"></span></div>
+                        Facebook</a></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear" id="priam_wikipedia_clear"></div>
+    <div id="bodyContent" class="mw-body-content">
+        <div id="siteSub">From Wikipedia, the free encyclopedia</div>
+        <div id="contentSub"></div>
+        <div id="jump-to-nav" class="mw-jump">
+            Jump to: <a href="https://en.wikipedia.org/wiki/Tic-tac-toe#mw-head">navigation</a>, <a
+                href="https://en.wikipedia.org/wiki/Tic-tac-toe#p-search">search</a>
+        </div>
+        <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+            <div class="hatnote">"Tic tac toe" and "Noughts and Crosses" redirect here. For the
+                band, see <a href="https://en.wikipedia.org/wiki/Tic_Tac_Toe_(band)"
+                             title="Tic Tac Toe (band)">Tic Tac Toe (band)</a>. For the novel series
+                by Malorie Blackman, see <a
+                        href="https://en.wikipedia.org/wiki/Noughts_%26_Crosses_(novel_series)"
+                        title="Noughts &amp; Crosses (novel series)">Noughts &amp; Crosses (novel
+                    series)</a>. For the Ian Rankin novel, see <a
+                        href="https://en.wikipedia.org/wiki/Knots_and_Crosses"
+                        title="Knots and Crosses">Knots and Crosses</a>.
+            </div>
+            <table class="infobox" style="width:22em">
+                <caption>Tic-tac-toe</caption>
+                <tbody>
+                <tr>
+                    <td colspan="2" style="text-align:center"><a
+                            href="https://en.wikipedia.org/wiki/File:Tic_tac_toe.svg" class="image"><img
+                            alt="Tic tac toe.svg"
+                            src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/200px-Tic_tac_toe.svg.png"
+                            width="200" height="178"
+                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/300px-Tic_tac_toe.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/400px-Tic_tac_toe.svg.png 2x"
+                            data-file-width="522" data-file-height="464"></a>
+
+                        <div>A completed game of Tic-tac-toe</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Genre(s)</th>
+                    <td><a href="https://en.wikipedia.org/wiki/Paper-and-pencil_game"
+                           title="Paper-and-pencil game">Paper-and-pencil game</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Players</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">Setup time</th>
+                    <td>Minimal</td>
+                </tr>
+                <tr>
+                    <th scope="row">Playing time</th>
+                    <td>~1 minute</td>
+                </tr>
+                <tr>
+                    <th scope="row">Random chance</th>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <th scope="row">Skill(s) required</th>
+                    <td><a href="https://en.wikipedia.org/wiki/Strategy_game" title="Strategy game">Strategy</a>,
+                        tactics, observation
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Synonym(s)</th>
+                    <td>Noughts and crosses<br>
+                        Xs and Os
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <p><b>Tic-tac-toe</b> (also known as <b>Noughts and crosses</b> or <b>Xs and Os</b>) is
+                a <a href="https://en.wikipedia.org/wiki/Paper-and-pencil_game"
+                     title="Paper-and-pencil game">paper-and-pencil game</a> for two players,
+                <i>X</i> and <i>O</i>, who take turns marking the spaces in a 3Ã—3 grid. The player
+                who succeeds in placing three of their marks in a horizontal, vertical, or diagonal
+                row wins the game.</p>
+
+            <p>The following example game is won by the first player, X:</p>
+
+            <div class="center">
+                <div class="floatnone"><a
+                        href="https://en.wikipedia.org/wiki/File:Tic-tac-toe-game-1.svg"
+                        class="image" title="Game of Tic-tac-toe, won by X"><img
+                        alt="Game of Tic-tac-toe, won by X"
+                        src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/479px-Tic-tac-toe-game-1.svg.png"
+                        width="479" height="56"
+                        srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Tic-tac-toe-game-1.svg/719px-Tic-tac-toe-game-1.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Tic-tac-toe-game-1.svg/958px-Tic-tac-toe-game-1.svg.png 2x"
+                        data-file-width="479" data-file-height="56"></a></div>
+            </div>
+            <p>Players soon discover that <a href="https://en.wikipedia.org/wiki/Best_response"
+                                             title="Best response">best play</a> from both parties
+                leads to a <a href="https://en.wikipedia.org/wiki/Draw_(tie)" title="Draw (tie)"
+                              class="mw-redirect">draw</a>. Hence, Tic-tac-toe is most often played
+                by young children.</p>
+
+            <p>Because of the simplicity of Tic-tac-toe, it is often used as a <a
+                    href="https://en.wikipedia.org/wiki/Pedagogical" title="Pedagogical"
+                    class="mw-redirect">pedagogical</a> tool for teaching the concepts of good <a
+                    href="https://en.wikipedia.org/wiki/Sportsmanship" title="Sportsmanship">sportsmanship</a>
+                and the branch of <a href="https://en.wikipedia.org/wiki/Artificial_intelligence"
+                                     title="Artificial intelligence">artificial intelligence</a>
+                that deals with the searching of <a href="https://en.wikipedia.org/wiki/Game_tree"
+                                                    title="Game tree">game trees</a>. It is
+                straightforward to write a <a href="https://en.wikipedia.org/wiki/Computer_program"
+                                              title="Computer program">computer program</a> to play
+                Tic-tac-toe perfectly, to enumerate the 765 essentially different positions (the <a
+                        href="https://en.wikipedia.org/wiki/State_space_complexity"
+                        title="State space complexity" class="mw-redirect">state space
+                    complexity</a>), or the 26,830 possible games <a
+                        href="https://en.wikipedia.org/wiki/Up_to" title="Up to">up to</a> rotations
+                and reflections (the <a href="https://en.wikipedia.org/wiki/Game_tree_complexity"
+                                        title="Game tree complexity" class="mw-redirect">game tree
+                    complexity</a>) on this space.<sup id="cite_ref-1" class="reference"><a
+                        href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-1"><span>[</span>1<span>]</span></a></sup>
+            </p>
+
+            <p>The game can be generalized to an <a href="https://en.wikipedia.org/wiki/M,n,k-game"
+                                                    title="M,n,k-game">m,n,k-game</a> in which two
+                players alternate placing stones of their own color on an <i>m</i>Ã—<i>n</i> board,
+                with the goal of getting <i>k</i> of their own color in a row. Tic-tac-toe is the
+                (3,3,3)-game.</p>
+
+            <p></p>
+
+            <div id="toc" class="toc">
+                <div id="toctitle">
+                    <h2>Contents</h2>
+                    <span class="toctoggle">&nbsp;[<a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#"
+                            id="togglelink">hide</a>]&nbsp;</span></div>
+                <ul>
+                    <li class="toclevel-1 tocsection-1"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#History"><span
+                            class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+                    <li class="toclevel-1 tocsection-2"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#Combinatorics"><span
+                            class="tocnumber">2</span> <span
+                            class="toctext">Combinatorics</span></a>
+                        <ul>
+                            <li class="toclevel-2 tocsection-3"><a
+                                    href="https://en.wikipedia.org/wiki/Tic-tac-toe#Number_of_terminal_positions"><span
+                                    class="tocnumber">2.1</span> <span class="toctext">Number of terminal positions</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="toclevel-1 tocsection-4"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#Strategy"><span
+                            class="tocnumber">3</span> <span class="toctext">Strategy</span></a>
+                    </li>
+                    <li class="toclevel-1 tocsection-5"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#Variations"><span
+                            class="tocnumber">4</span> <span class="toctext">Variations</span></a>
+                    </li>
+                    <li class="toclevel-1 tocsection-6"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#English_names"><span
+                            class="tocnumber">5</span> <span
+                            class="toctext">English names</span></a></li>
+                    <li class="toclevel-1 tocsection-7"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#In_popular_culture"><span
+                            class="tocnumber">6</span> <span
+                            class="toctext">In popular culture</span></a></li>
+                    <li class="toclevel-1 tocsection-8"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#See_also"><span
+                            class="tocnumber">7</span> <span class="toctext">See also</span></a>
+                    </li>
+                    <li class="toclevel-1 tocsection-9"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#References"><span
+                            class="tocnumber">8</span> <span class="toctext">References</span></a>
+                    </li>
+                    <li class="toclevel-1 tocsection-10"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#External_links"><span
+                            class="tocnumber">9</span> <span
+                            class="toctext">External links</span></a></li>
+                </ul>
+            </div>
+            <p></p>
+
+            <h2><span class="mw-headline" id="History">History</span><span
+                    class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=1"
+                    title="Edit section: History">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+
+            <p>An early variant of Tic-tac-toe was played in the <a
+                    href="https://en.wikipedia.org/wiki/Roman_Empire" title="Roman Empire">Roman
+                Empire</a>, around the first century BC. It was called Terni Lapilli and instead of
+                having any number of pieces, each player only had three, thus they had to move them
+                around to empty spaces to keep playing. The game's grid markings have been found
+                chalked all over Rome. However, according to Claudia Zaslavsky's book <i>Tic Tac
+                    Toe: And Other Three-In-A Row Games from Ancient Egypt to the Modern
+                    Computer</i>, Tic-tac-toe could originate back to <a
+                        href="https://en.wikipedia.org/wiki/Ancient_Egypt" title="Ancient Egypt">ancient
+                    Egypt</a>.<sup id="cite_ref-2" class="reference"><a
+                        href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-2"><span>[</span>2<span>]</span></a></sup>
+                Another closely related ancient game is <a
+                        href="https://en.wikipedia.org/wiki/Three_Men%27s_Morris"
+                        title="Three Men&#39;s Morris">Three Men's Morris</a> which is also played
+                on a simple grid and requires three pieces in a row to finish.<sup id="cite_ref-3"
+                                                                                   class="reference"><a
+                        href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-3"><span>[</span>3<span>]</span></a></sup>
+            </p>
+
+            <p>The different names of the game are more recent . The first print reference to
+                "Noughts and crosses", the British name, appeared in 1864. In his novel "Can You
+                Forgive Her", 1864, Anthony Trollope refers to a clerk playing "tit-tat-toe". The
+                first print reference to a game called "tick-tack-toe" occurred in 1884, but
+                referred to "a children's game played on a slate, consisting in trying with the eyes
+                shut to bring the pencil down on one of the numbers of a set, the number hit being
+                scored". "Tic-tac-toe" may also derive from "tick-tack", the name of an old version
+                of <a href="https://en.wikipedia.org/wiki/Backgammon"
+                      title="Backgammon">backgammon</a> first described in 1558. The U.S. renaming
+                of Noughts and crosses as Tic-tac-toe occurred in the 20th century.<sup
+                        id="cite_ref-4" class="reference"><a
+                        href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-4"><span>[</span>4<span>]</span></a></sup>
+            </p>
+
+            <p>In 1952, <i><a href="https://en.wikipedia.org/wiki/OXO" title="OXO">OXO</a></i> (or
+                <i>Noughts and Crosses</i>) for the <a href="https://en.wikipedia.org/wiki/EDSAC"
+                                                       title="EDSAC" class="mw-redirect">EDSAC</a>
+                computer became one of the first known <a
+                        href="https://en.wikipedia.org/wiki/Video_game" title="Video game">video
+                    games</a>. The computer player could play perfect games of Tic-tac-toe against a
+                human opponent.</p>
+
+            <p>In 1975, Tic-tac-toe was also used by <a
+                    href="https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology"
+                    title="Massachusetts Institute of Technology">MIT</a> students to demonstrate
+                the computational power of <a href="https://en.wikipedia.org/wiki/Tinkertoy"
+                                              title="Tinkertoy">Tinkertoy</a> elements. The
+                Tinkertoy computer, made out of (almost) only Tinkertoys, is able to play
+                Tic-tac-toe perfectly.<sup id="cite_ref-5" class="reference"><a
+                        href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-5"><span>[</span>5<span>]</span></a></sup>
+                It is currently on display at the <a
+                        href="https://en.wikipedia.org/wiki/Museum_of_Science,_Boston"
+                        title="Museum of Science, Boston" class="mw-redirect">Museum of Science,
+                    Boston</a>.</p>
+
+            <h2><span class="mw-headline" id="Combinatorics">Combinatorics</span><span
+                    class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=2"
+                    title="Edit section: Combinatorics">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+
+            <div class="thumb tright">
+                <div class="thumbinner" style="width:302px;"><a
+                        href="https://en.wikipedia.org/wiki/File:Tic-tac-toe-game-tree.svg"
+                        class="image"><img alt=""
+                                           src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/300px-Tic-tac-toe-game-tree.svg.png"
+                                           width="300" height="200" class="thumbimage"
+                                           srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Tic-tac-toe-game-tree.svg/450px-Tic-tac-toe-game-tree.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/da/Tic-tac-toe-game-tree.svg/600px-Tic-tac-toe-game-tree.svg.png 2x"
+                                           data-file-width="545" data-file-height="363"></a>
+
+                    <div class="thumbcaption">
+                        <div class="magnify"><a
+                                href="https://en.wikipedia.org/wiki/File:Tic-tac-toe-game-tree.svg"
+                                class="internal" title="Enlarge"></a></div>
+                        The first two <a href="https://en.wikipedia.org/wiki/Ply_(chess)"
+                                         title="Ply (chess)" class="mw-redirect">plies</a> of the <a
+                            href="https://en.wikipedia.org/wiki/Game_tree" title="Game tree">game
+                        tree</a> for Tic-tac-toe. Once rotations and reflections are eliminated,
+                        there are only three opening moves â€“ a corner, a side or the middle.
+                    </div>
+                </div>
+            </div>
+            <p>Despite its apparent simplicity, Tic-tac-toe requires detailed analysis to determine
+                even some elementary combinatory facts, the most interesting of which are the number
+                of possible games and the number of possible positions. A position is merely a state
+                of the board, while a game usually refers to the way a terminal position is
+                obtained.</p>
+
+            <p>Naive counting leads to 19,683 possible board layouts (3<sup>9</sup> since each of
+                the nine spaces can be X, O or blank), and 362,880 (i.e. 9<a
+                        href="https://en.wikipedia.org/wiki/Factorial" title="Factorial">!</a>)
+                possible games (different sequences for placing the Xs and Os on the board).
+                However, two matters much reduce these numbers:</p>
+            <ul>
+                <li>The game ends when three-in-a-row is obtained.</li>
+                <li>The number of Xs is always either equal to or exactly 1 more than the number of
+                    Os (if X starts).
+                </li>
+            </ul>
+            <p>The complete analysis is further complicated by the definitions used when setting the
+                conditions, like board symmetries.</p>
+
+            <h3><span class="mw-headline" id="Number_of_terminal_positions">Number of terminal positions</span><span
+                    class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=3"
+                    title="Edit section: Number of terminal positions">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h3>
+
+            <p>When considering only the state of the board, and after taking into account board
+                symmetries (i.e. rotations and reflections), there are only 138 terminal board
+                positions. Assuming that X makes the first move every time:</p>
+            <ul>
+                <li>91 distinct positions are won by (X)</li>
+                <li>44 distinct positions are won by (O)</li>
+                <li>3 distinct positions are drawn</li>
+            </ul>
+            <h2><span class="mw-headline" id="Strategy">Strategy</span><span class="mw-editsection"><span
+                    class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=4"
+                    title="Edit section: Strategy">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+
+            <div class="thumb tright">
+                <div class="thumbinner" style="width:222px;"><a
+                        href="https://en.wikipedia.org/wiki/File:Tictactoe-X.svg" class="image"><img
+                        alt=""
+                        src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/220px-Tictactoe-X.svg.png"
+                        width="220" height="220" class="thumbimage"
+                        srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/de/Tictactoe-X.svg/330px-Tictactoe-X.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/de/Tictactoe-X.svg/440px-Tictactoe-X.svg.png 2x"
+                        data-file-width="512" data-file-height="512"></a>
+
+                    <div class="thumbcaption">
+                        <div class="magnify"><a
+                                href="https://en.wikipedia.org/wiki/File:Tictactoe-X.svg"
+                                class="internal" title="Enlarge"></a></div>
+                        Optimal strategy for player X. In each grid, the shaded red X denotes the
+                        optimal move, and the location of O's next move gives the next subgrid to
+                        examine. Note that only two sequences of moves by O (both starting with
+                        center, top-right, left-mid) lead to a draw, with the remaining sequences
+                        leading to wins from X.
+                    </div>
+                </div>
+            </div>
+            <div class="thumb tright">
+                <div class="thumbinner" style="width:222px;"><a
+                        href="https://en.wikipedia.org/wiki/File:Tictactoe-O.svg" class="image"><img
+                        alt=""
+                        src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/220px-Tictactoe-O.svg.png"
+                        width="220" height="220" class="thumbimage"
+                        srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Tictactoe-O.svg/330px-Tictactoe-O.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Tictactoe-O.svg/440px-Tictactoe-O.svg.png 2x"
+                        data-file-width="512" data-file-height="512"></a>
+
+                    <div class="thumbcaption">
+                        <div class="magnify"><a
+                                href="https://en.wikipedia.org/wiki/File:Tictactoe-O.svg"
+                                class="internal" title="Enlarge"></a></div>
+                        Optimal strategy for player O. Player O can always force a win or draw by
+                        taking center. If it is taken by X, then O must take a corner
+                    </div>
+                </div>
+            </div>
+            <p>A player can play a perfect game of Tic-tac-toe (to win or, at least, draw) if they
+                choose the first available move from the following list, each turn, as used in
+                Newell and Simon's 1972 tic-tac-toe program.<sup id="cite_ref-6"
+                                                                 class="reference"><a
+                        href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-6"><span>[</span>6<span>]</span></a></sup>
+            </p>
+            <ol>
+                <li><b>Win</b>: If the player has two in a row, they can place a third to get three
+                    in a row.
+                </li>
+                <li><b>Block</b>: If the opponent has two in a row, the player must play the third
+                    themselves to block the opponent.
+                </li>
+                <li><b>Fork</b>: Create an opportunity where the player has two threats to win (two
+                    non-blocked lines of 2).
+                </li>
+                <li><b>Blocking an opponent's fork</b>:
+                    <ul>
+                        <li><b>Option 1</b>: The player should create two in a row to force the
+                            opponent into defending, as long as it doesn't result in them creating a
+                            fork. For example, if "X" has a corner, "O" has the center, and "X" has
+                            the opposite corner as well, "O" must not play a corner in order to win.
+                            (Playing a corner in this scenario creates a fork for "X" to win.)
+                        </li>
+                        <li><b>Option 2</b>: If there is a configuration where the opponent can
+                            fork, the player should block that fork.
+                        </li>
+                    </ul>
+                </li>
+                <li><b>Center</b>: A player marks the center. (If it is the first move of the game,
+                    playing on a corner gives "O" more opportunities to make a mistake and may
+                    therefore be the better choice; however, it makes no difference between perfect
+                    players.)
+                </li>
+                <li><b>Opposite corner</b>: If the opponent is in the corner, the player plays the
+                    opposite corner.
+                </li>
+                <li><b>Empty corner</b>: The player plays in a corner square.</li>
+                <li><b>Empty side</b>: The player plays in a middle square on any of the 4 sides.
+                </li>
+            </ol>
+            <p>The first player, who shall be designated "X", has 3 possible positions to mark
+                during the first turn. Superficially, it might seem that there are 9 possible
+                positions, corresponding to the 9 squares in the grid. However, by rotating the
+                board, we will find that in the first turn, every corner mark is strategically
+                equivalent to every other corner mark. The same is true of every edge mark. For
+                strategy purposes, there are therefore only three possible first marks: corner,
+                edge, or center. Player X can win or force a draw from any of these starting marks;
+                however, playing the corner gives the opponent the smallest choice of squares which
+                must be played to avoid losing.<sup id="cite_ref-7" class="reference"><a
+                        href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-7"><span>[</span>7<span>]</span></a></sup>
+            </p>
+
+            <p>The second player, who shall be designated "O", must respond to X's opening mark in
+                such a way as to avoid the forced win. Player O must always respond to a corner
+                opening with a center mark, and to a center opening with a corner mark. An edge
+                opening must be answered either with a center mark, a corner mark next to the X, or
+                an edge mark opposite the X. Any other responses will allow X to force the win. Once
+                the opening is completed, O's task is to follow the above list of priorities in
+                order to force the draw, or else to gain a win if X makes a weak play.</p>
+
+            <p>To guarantee a draw for O, however:</p>
+            <ul>
+                <li>If X does not play center opening move (playing a corner is the best opening
+                    move), take center, and then a side middle. This will stop any forks from
+                    happening. If O plays a corner, a perfect X player has already played the corner
+                    opposite their first and proceeds to play a 3rd corner, stopping O's 3-in-a-row
+                    and making their own fork. However, if X is not a perfect player and has played
+                    a corner and then a side middle, O should not play the opposite side middle as
+                    the second move, because then X is not forced to block in the next move and can
+                    fork.
+                    <ul>
+                        <li>If O takes center (best move for them), X should take the corner
+                            opposite the original, and proceed as detailed above. The only way for O
+                            to force a tie against a perfect X player is if O plays middle and then
+                            a side-middle.
+                        </li>
+                        <li>If O plays a corner or side-middle first, X is guaranteed to win:
+                            <ul>
+                                <li>If corner, X simply takes any of the other 2 corners, and then
+                                    the last, a fork.
+                                </li>
+                                <li>If O plays a side-middle, X takes the only corner that O's
+                                    blocking won't make 2 in a row. O will block, but the best of
+                                    the other two will be seen by X, and O is forked.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>If X plays center opening move, O should pay attention and not allow a fork. X
+                    should play a corner first.
+                </li>
+            </ul>
+            <div class="thumb tright">
+                <div class="thumbinner" style="width:182px;"><a
+                        href="https://en.wikipedia.org/wiki/File:Jdv.png" class="image"><img alt=""
+                                                                                             src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/180px-Jdv.png"
+                                                                                             width="180"
+                                                                                             height="181"
+                                                                                             class="thumbimage"
+                                                                                             srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jdv.png/270px-Jdv.png 1.5x, //upload.wikimedia.org/wikipedia/commons/0/05/Jdv.png 2x"
+                                                                                             data-file-width="299"
+                                                                                             data-file-height="300"></a>
+
+                    <div class="thumbcaption">
+                        <div class="magnify"><a href="https://en.wikipedia.org/wiki/File:Jdv.png"
+                                                class="internal" title="Enlarge"></a></div>
+                        Initiative in start game
+                    </div>
+                </div>
+            </div>
+            <h2><span class="mw-headline" id="Variations">Variations</span><span
+                    class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=5"
+                    title="Edit section: Variations">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+
+            <p>Many <a href="https://en.wikipedia.org/wiki/Board_game" title="Board game">board
+                games</a> share the element of trying to be the first to get <i>n</i>-in-a-row,
+                including <a href="https://en.wikipedia.org/wiki/Three_Men%27s_Morris"
+                             title="Three Men&#39;s Morris">Three Men's Morris</a>, <a
+                        href="https://en.wikipedia.org/wiki/Nine_Men%27s_Morris"
+                        title="Nine Men&#39;s Morris">Nine Men's Morris</a>, <a
+                        href="https://en.wikipedia.org/wiki/Pente" title="Pente">pente</a>, <a
+                        href="https://en.wikipedia.org/wiki/Gomoku" title="Gomoku">gomoku</a>, <a
+                        href="https://en.wikipedia.org/wiki/Qubic" title="Qubic"
+                        class="mw-redirect">Qubic</a>, <a
+                        href="https://en.wikipedia.org/wiki/Connect_Four" title="Connect Four">Connect
+                    Four</a>, <a href="https://en.wikipedia.org/wiki/Quarto_(board_game)"
+                                 title="Quarto (board game)">Quarto</a>, <a
+                        href="https://en.wikipedia.org/wiki/Gobblet" title="Gobblet">Gobblet</a>, <a
+                        href="https://en.wikipedia.org/wiki/Order_and_Chaos"
+                        title="Order and Chaos">Order and Chaos</a>, <a
+                        href="https://en.wikipedia.org/wiki/Toss_Across" title="Toss Across">Toss
+                    Across</a>, and <a href="https://en.wikipedia.org/wiki/Mojo_(board_game)"
+                                       title="Mojo (board game)">Mojo</a>. Tic-tac-toe is an
+                instance of an <a href="https://en.wikipedia.org/wiki/M,n,k-game"
+                                  title="M,n,k-game">m,n,k-game</a>, where two players alternate
+                taking turns, as they do in tic-tac-toe, on an <i>m</i>Ã—<i>n</i> board until one of
+                them gets <i>k</i> in a row. <a
+                        href="https://en.wikipedia.org/wiki/Harary%27s_generalized_tic-tac-toe"
+                        title="Harary&#39;s generalized tic-tac-toe">Harary's generalized
+                    tic-tac-toe</a> is an even broader generalization.</p>
+
+            <p>Other variations of tic-tac-toe include:</p>
+            <ul>
+                <li>3-dimensional tic-tac-toe on a 3Ã—3Ã—3 board. In this game, the first player has
+                    an easy win by playing in the centre if 2 people are playing. Another variant,
+                    <a href="https://en.wikipedia.org/wiki/Qubic" title="Qubic" class="mw-redirect">Qubic</a>,
+                    is played on a 4Ã—4Ã—4 board; it was <a
+                            href="https://en.wikipedia.org/wiki/Solved_board_games"
+                            title="Solved board games" class="mw-redirect">solved</a> by <a
+                            href="https://en.wikipedia.org/wiki/Oren_Patashnik"
+                            title="Oren Patashnik">Oren Patashnik</a> in 1980 (the first player can
+                    force a win).<sup id="cite_ref-8" class="reference"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-8"><span>[</span>8<span>]</span></a></sup>
+                    Higher dimensional variations are also possible.<sup id="cite_ref-gh02_9-0"
+                                                                         class="reference"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-gh02-9"><span>[</span>9<span>]</span></a></sup>
+                </li>
+                <li>In <a href="https://en.wikipedia.org/wiki/Mis%C3%A8re"
+                          title="MisÃ¨re">misÃ¨re</a> tic-tac-toe the player wins if the opponent
+                    gets <i>n</i> in a row.<sup id="cite_ref-10" class="reference"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-10"><span>[</span>10<span>]</span></a></sup>
+                    A 3Ã—3 game is a draw. More generally, the first player can draw or win on any
+                    board (of any dimension) whose side length is odd, by playing first in the
+                    central cell and then mirroring the opponent's moves.<sup id="cite_ref-gh02_9-1"
+                                                                              class="reference"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-gh02-9"><span>[</span>9<span>]</span></a></sup>
+                </li>
+            </ul>
+            <div class="floatright"><a
+                    href="https://en.wikipedia.org/wiki/File:Magicsquareexample.svg"
+                    class="image"><img alt="Magicsquareexample.svg"
+                                       src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/100px-Magicsquareexample.svg.png"
+                                       width="100" height="78"
+                                       srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Magicsquareexample.svg/150px-Magicsquareexample.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Magicsquareexample.svg/200px-Magicsquareexample.svg.png 2x"
+                                       data-file-width="180" data-file-height="140"></a></div>
+            <ul>
+                <li>There is a game that is <a href="https://en.wikipedia.org/wiki/Isomorphic"
+                                               title="Isomorphic" class="mw-redirect">isomorphic</a>
+                    to tic-tac-toe, but on the surface appears completely different. Two players in
+                    turn say a number between one and nine. A particular number may not be repeated.
+                    The game is won by the player who has said three numbers whose sum is 15.
+                    Plotting these numbers on a 3Ã—3 <a
+                            href="https://en.wikipedia.org/wiki/Magic_square" title="Magic square">magic
+                        square</a> shows that the game exactly corresponds with tic-tac-toe, since
+                    three numbers will be arranged in a straight line if and only if they total 15.
+                </li>
+            </ul>
+            <table class="infobox" border="0" cellpadding="0" cellspacing="0"
+                   style="background:white;font:100% monospace;text-align:center;">
+                <tbody>
+                <tr>
+                    <td rowspan="3"></td>
+                    <th><span style="color:red">e</span><span style="color:aqua">a</span><span
+                            style="color:teal">t</span></th>
+                    <th><span style="color:blue">b</span><span style="color:red">ee</span></th>
+                    <th><span style="color:lime">l</span><span style="color:red">e</span><span
+                            style="color:silver">ss</span></th>
+                    <th>â†’<span style="color:red">e</span></th>
+                </tr>
+                <tr>
+                    <th><span style="color:aqua">a</span><span style="color:fuchsia">i</span>r</th>
+                    <th><span style="color:blue">b</span><span style="color:fuchsia">i</span><span
+                            style="color:teal">t</span><span style="color:silver">s</span></th>
+                    <th><span style="color:lime">l</span><span style="color:fuchsia">i</span>p</th>
+                    <th>â†’<span style="color:fuchsia">i</span></th>
+                </tr>
+                <tr>
+                    <th><span style="color:silver">s</span><span
+                            style="color: #FFA500;">o</span>d<span style="color:aqua">a</span></th>
+                    <th><span style="color:blue">b</span><span style="color: #FFA500;">oo</span>k
+                    </th>
+                    <th><span style="color:lime">l</span><span style="color: #FFA500;">o</span><span
+                            style="color:teal">t</span></th>
+                    <th>â†’<span style="color: #FFA500;">o</span></th>
+                </tr>
+                <tr>
+                    <th>â†™<br>
+                        <span style="color:silver">s</span>&nbsp;&nbsp;</th>
+                    <th>â†“<br>
+                        <span style="color:aqua">a</span></th>
+                    <th>â†“<br>
+                        <span style="color:blue">b</span></th>
+                    <th>â†“<br>
+                        <span style="color:lime">l</span></th>
+                    <th>â†˜<br>
+                        &nbsp;&nbsp;<span style="color:teal">t</span></th>
+                </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>Another isomorphic game uses a list of nine carefully chosen words, for instance
+                    "eat", "bee", "less", "air", "bits", "lip", "soda", "book", and "lot". Each
+                    player picks one word in turn and to win, a player must select three words with
+                    the same letter. The words may be plotted on a tic-tac-toe grid in such a way
+                    that a three in a row line wins.<sup id="cite_ref-11" class="reference"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-11"><span>[</span>11<span>]</span></a></sup>
+                </li>
+                <li>Numerical Tic Tac Toe is a variation invented by the mathematician <a
+                        href="https://en.wikipedia.org/wiki/Ronald_Graham" title="Ronald Graham">Ronald
+                    Graham</a>. The numbers 1 to 9 are used in this game. The first player plays
+                    with the odd numbers, the second player plays with the even numbers. All numbers
+                    can be used only once. The player who puts down 15 points in a line wins (sum of
+                    3 numbers).
+                </li>
+                <li>In the 1970s, there was a two player game made by <a
+                        href="https://en.wikipedia.org/wiki/Tri-ang" title="Tri-ang"
+                        class="mw-redirect">Tri-ang</a> Toys &amp; Games called <i><b>Check
+                    Lines</b></i>, in which the board consisted of eleven holes arranged in a <a
+                        href="https://en.wikipedia.org/wiki/Geometrical" title="Geometrical"
+                        class="mw-redirect">geometrical</a> pattern of twelve straight lines each
+                    containing three of the holes. Each player had exactly five tokens and played in
+                    turn placing one token in any of the holes. The winner was the first player
+                    whose tokens were arranged in <b>two lines of three</b> (which by definition
+                    were <a href="https://en.wikipedia.org/wiki/Line-line_intersection"
+                            title="Line-line intersection" class="mw-redirect">intersecting</a>
+                    lines). If neither player had won by the tenth turn, subsequent turns consisted
+                    of moving one of one's own tokens to the remaining empty hole, with the
+                    constraint that this move could only be from an adjacent hole.<sup
+                            id="cite_ref-12" class="reference"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-12"><span>[</span>12<span>]</span></a></sup>
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/Quantum_tic_tac_toe"
+                       title="Quantum tic tac toe" class="mw-redirect">Quantum tic tac toe</a>
+                    allows players to place a quantum superposition of numbers on the board, i.e.
+                    the players' moves are "superpositions" of plays in the original classical game.
+                    This variation was invented by Allan Goff of Novatia Labs.<sup id="cite_ref-13"
+                                                                                   class="reference"><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_note-13"><span>[</span>13<span>]</span></a></sup>
+                </li>
+            </ul>
+            <h2><span class="mw-headline" id="English_names">English names</span><span
+                    class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=6"
+                    title="Edit section: English names">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+
+            <p>The game has a number of English names.</p>
+            <ul>
+                <li>Tick-tack-toe, Tic-tac-toe, Tick-tat-toe, or Tit-tat-toe (USA, Canada)</li>
+                <li>Noughts and crosses or Naughts and crosses (United Kingdom, Republic of Ireland,
+                    Australia, New Zealand, South Africa)
+                </li>
+                <li>Exy-Ozys, Xsie-Osies (verbal name only) (<a
+                        href="https://en.wikipedia.org/wiki/Northern_Ireland"
+                        title="Northern Ireland">Northern Ireland</a>)
+                </li>
+                <li>Xs and Os (Egypt, Republic of Ireland, Canada, <a
+                        href="https://en.wikipedia.org/wiki/Zimbabwe" title="Zimbabwe">Zimbabwe</a>)
+                </li>
+            </ul>
+            <p>In the United States, the name "Noughts and crosses" is not well understood, as the
+                word "nought" is archaic in usage and X-shaped objects are not generally called
+                crosses except in the case of specific named crosses like <a
+                        href="https://en.wikipedia.org/wiki/St._Patrick%27s_Cross"
+                        title="St. Patrick&#39;s Cross" class="mw-redirect">St. Patrick's Cross</a>.
+            </p>
+
+            <p>Sometimes, the games tic-tac-toe (where players keep adding "pieces") and <a
+                    href="https://en.wikipedia.org/wiki/Three_Men%27s_Morris"
+                    title="Three Men&#39;s Morris">Three Men's Morris</a> (where pieces start to
+                move after a certain number have been placed) are confused with each other.</p>
+
+            <h2><span class="mw-headline" id="In_popular_culture">In popular culture</span><span
+                    class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=7"
+                    title="Edit section: In popular culture">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+            <ul>
+                <li>In the movie <i><a href="https://en.wikipedia.org/wiki/WarGames"
+                                       title="WarGames">WarGames</a></i>, a computer, Joshua, learns
+                    through a Tic-Tac-Toe analogy that <a
+                            href="https://en.wikipedia.org/wiki/Nuclear_war" title="Nuclear war"
+                            class="mw-redirect">nuclear war</a> is unwinnable.
+                </li>
+                <li>The BBC's <a href="https://en.wikipedia.org/wiki/Test_Card_F"
+                                 title="Test Card F">Test Card F</a> image includes a picture of a
+                    game. In the updated version, <a
+                            href="https://en.wikipedia.org/wiki/Test_Card_J" title="Test Card J"
+                            class="mw-redirect">Test Card J</a>, the game's X indicates the exact
+                    center of the screen.
+                </li>
+                <li><a href="https://en.wikipedia.org/wiki/George_Cooper_(poet)"
+                       title="George Cooper (poet)">George Cooper (poet)</a> wrote the words and <a
+                        href="https://en.wikipedia.org/wiki/John_Rogers_Thomas"
+                        title="John Rogers Thomas">John Rogers Thomas</a> wrote the music for a song
+                    <a rel="nofollow" class="external text"
+                       href="https://www.loc.gov/item/sm1876.02044/">"Tit, Tac, Toe"</a> in 1876.
+                </li>
+            </ul>
+            <p>Various <a href="https://en.wikipedia.org/wiki/Game_show" title="Game show">game
+                shows</a> have been based on Tic-Tac-Toe and its variants:</p>
+            <ul>
+                <li>On <i><a href="https://en.wikipedia.org/wiki/Hollywood_Squares"
+                             title="Hollywood Squares">Hollywood Squares</a></i>, nine celebrities
+                    filled the cells of the Tic-tac-toe grid; players put symbols on the board by
+                    correctly agreeing or disagreeing with a celebrity's answer to a question.
+                    Variations of the show include <i><a
+                            href="https://en.wikipedia.org/wiki/Storybook_Squares"
+                            title="Storybook Squares">Storybook Squares</a></i> and <i><a
+                            href="https://en.wikipedia.org/wiki/Hip_Hop_Squares"
+                            title="Hip Hop Squares">Hip Hop Squares</a></i>. The British version was
+                    <i><a href="https://en.wikipedia.org/wiki/Celebrity_Squares"
+                          title="Celebrity Squares">Celebrity Squares</a></i>. Australia had various
+                    versions under the names of Celebrity Squares, <a
+                            href="https://en.wikipedia.org/wiki/Personality_Squares"
+                            title="Personality Squares">Personality Squares</a> &amp; <a
+                            href="https://en.wikipedia.org/wiki/All-Star_Squares"
+                            title="All-Star Squares">All Star Squares</a>.
+                </li>
+                <li>In <i><a href="https://en.wikipedia.org/wiki/Tic-Tac-Dough"
+                             title="Tic-Tac-Dough">Tic-Tac-Dough</a></i>, players put symbols up on
+                    the board by answering questions in various categories, which shuffle after each
+                    player's turn.
+                </li>
+                <li>In <i><a href="https://en.wikipedia.org/wiki/Beat_the_Teacher"
+                             title="Beat the Teacher">Beat the Teacher</a></i>, contestants answer
+                    questions to win a turn to influence a Tic-tac-toe grid.
+                </li>
+                <li>On <i><a href="https://en.wikipedia.org/wiki/The_Price_Is_Right"
+                             title="The Price Is Right">The Price Is Right</a></i>, several national
+                    variants feature a <a href="https://en.wikipedia.org/wiki/Pricing_game"
+                                          title="Pricing game" class="mw-redirect">pricing game</a>
+                    called "Secret X," in which players must guess prices of two small prizes to win
+                    Xs (in addition to one free X) to place on a blank board. They must place the Xs
+                    in position to guess the location of the titular "secret X" hidden in the center
+                    column of the board and form a Tic-tac-toe line across or diagonally (no
+                    vertical lines allowed). There are no Os in this variant of the game.
+                </li>
+                <li>On <i><a href="https://en.wikipedia.org/wiki/Minute_to_Win_It"
+                             title="Minute to Win It">Minute to Win It</a></i>, the game Ping Tac
+                    Toe has one contestant playing the game with nine water-filled glasses and white
+                    and orange ping-pong balls, trying to get three in a row of either color. They
+                    must alternate colors after each successful landing and must be careful not to
+                    block themselves.
+                </li>
+            </ul>
+            <h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span
+                    class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=8"
+                    title="Edit section: See also">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Hales%E2%80%93Jewett_theorem"
+                       title="Halesâ€“Jewett theorem">Halesâ€“Jewett theorem</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/SOS_(game)" title="SOS (game)">SOS
+                    (game)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/3-D_Tic-Tac-Toe" title="3-D Tic-Tac-Toe">3-D
+                    Tic-Tac-Toe</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/M,n,k-game"
+                       title="M,n,k-game">m,n,k-game</a></li>
+            </ul>
+            <h2><span class="mw-headline" id="References">References</span><span
+                    class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=9"
+                    title="Edit section: References">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+
+            <div class="reflist columns references-column-count references-column-count-2"
+                 style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+                <ol class="references">
+                    <li id="cite_note-1"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-1"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><cite class="citation web">Schaefer, Steve
+                        (2002). <a rel="nofollow" class="external text"
+                                   href="http://www.mathrec.org/old/2002jan/solutions.html">"MathRec
+                            Solutions (Tic-Tac-Toe)"</a><span class="reference-accessdate">. Retrieved <span
+                                class="nowrap">2015-09-18</span></span>.</cite><span
+                            title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.aufirst=Steve&amp;rft.aulast=Schaefer&amp;rft.btitle=MathRec+Solutions+%28Tic-Tac-Toe%29&amp;rft.date=2002&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.mathrec.org%2Fold%2F2002jan%2Fsolutions.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook"
+                            class="Z3988"><span style="display:none;">&nbsp;</span></span></span>
+                    </li>
+                    <li id="cite_note-2"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-2"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><cite class="citation book">Zaslavsky, Claudia
+                        (1982). <a rel="nofollow" class="external text"
+                                   href="http://www.jacketflap.com/bookdetail.asp?bookid=0690043163"><i>Tic
+                            Tac Toe: And Other Three-In-A Row Games from Ancient Egypt to the Modern
+                            Computer</i></a>. Crowell. <a
+                                href="https://en.wikipedia.org/wiki/International_Standard_Book_Number"
+                                title="International Standard Book Number">ISBN</a>&nbsp;<a
+                                href="https://en.wikipedia.org/wiki/Special:BookSources/0-690-04316-3"
+                                title="Special:BookSources/0-690-04316-3">0-690-04316-3</a>.</cite><span
+                            title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.aufirst=Claudia&amp;rft.aulast=Zaslavsky&amp;rft.btitle=Tic+Tac+Toe%3A+And+Other+Three-In-A+Row+Games+from+Ancient+Egypt+to+the+Modern+Computer&amp;rft.date=1982&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.jacketflap.com%2Fbookdetail.asp%3Fbookid%3D0690043163&amp;rft.isbn=0-690-04316-3&amp;rft.pub=Crowell&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook"
+                            class="Z3988"><span style="display:none;">&nbsp;</span></span></span>
+                    </li>
+                    <li id="cite_note-3"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-3"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><a rel="nofollow" class="external text"
+                                                      href="http://www-cs.canisius.edu/~salley/SCA/Games/morris.html">Canisius
+                        College â€“ Morris Games</a></span></li>
+                    <li id="cite_note-4"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-4"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><a
+                            href="https://en.wikipedia.org/wiki/Oxford_English_Dictionary"
+                            title="Oxford English Dictionary">Oxford English Dictionary</a> entries for "Noughts and Crosses", "Tick-Tack" and "Tick-Tack-Toe", <a
+                            rel="nofollow" class="external text" href="http://dictionary.oed.com/">dictionary.oed.com</a></span>
+                    </li>
+                    <li id="cite_note-5"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-5"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><cite class="citation web"><a rel="nofollow"
+                                                                                 class="external text"
+                                                                                 href="https://web.archive.org/20070824200126/http://www.rci.rutgers.edu:80/~cfs/472_html/Intro/TinkertoyComputer/TinkerToy.html">"Tinkertoys
+                        and tic-tac-toe"</a>. Archived from <a rel="nofollow" class="external text"
+                                                               href="http://www.rci.rutgers.edu/~cfs/472_html/Intro/TinkertoyComputer/TinkerToy.html">the
+                        original</a> on August 24, 2007<span class="reference-accessdate">. Retrieved <span
+                            class="nowrap">2007-09-27</span></span>.</cite><span
+                            title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.btitle=Tinkertoys+and+tic-tac-toe&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.rci.rutgers.edu%2F~cfs%2F472_html%2FIntro%2FTinkertoyComputer%2FTinkerToy.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook"
+                            class="Z3988"><span style="display:none;">&nbsp;</span></span></span>
+                    </li>
+                    <li id="cite_note-6"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-6"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><cite class="citation journal">Kevin Crowley,
+                        Robert S. Siegler (1993). "Flexible Strategy Use in Young Childrenâ€™s
+                        Tic-Tac-Toe". <i>Cognitive Science</i> <b>17</b> (4): 531â€“561. <a
+                                href="https://en.wikipedia.org/wiki/Digital_object_identifier"
+                                title="Digital object identifier">doi</a>:<a rel="nofollow"
+                                                                             class="external text"
+                                                                             href="https://dx.doi.org/10.1016%2F0364-0213%2893%2990003-Q">10.1016/0364-0213(93)90003-Q</a>.</cite><span
+                            title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.atitle=Flexible+Strategy+Use+in+Young+Children%99s+Tic-Tac-Toe&amp;rft.au=Kevin+Crowley%2C+Robert+S.+Siegler&amp;rft.date=1993&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1016%2F0364-0213%2893%2990003-Q&amp;rft.issue=4&amp;rft.jtitle=Cognitive+Science&amp;rft.pages=531-561&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=17"
+                            class="Z3988"><span style="display:none;">&nbsp;</span></span></span>
+                    </li>
+                    <li id="cite_note-7"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-7"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><cite class="citation book">Martin Gardner
+                        (1988). <i>Hexaflexagons and Other Mathematical Diversions</i>. University
+                        of Chicago Press.</cite><span
+                            title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.au=Martin+Gardner&amp;rft.btitle=Hexaflexagons+and+Other+Mathematical+Diversions&amp;rft.date=1988&amp;rft.genre=book&amp;rft.pub=University+of+Chicago+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook"
+                            class="Z3988"><span style="display:none;">&nbsp;</span></span></span>
+                    </li>
+                    <li id="cite_note-8"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-8"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text">Oren Patashnik, Qubic: 4 x 4 x 4 Tic-Tac-Toe, Mathematical Magazine 53 (1980) 202â€“216.</span>
+                    </li>
+                    <li id="cite_note-gh02-9"><span class="mw-cite-backlink">^ <a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-gh02_9-0"><span
+                            class="cite-accessibility-label">Jump up to: </span><sup><i><b>a</b></i></sup></a> <a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-gh02_9-1"><sup><i><b>b</b></i></sup></a></span>
+                        <span class="reference-text"><cite id="CITEREFGolombHales2002"
+                                                           class="citation">Golomb, Solomon W.;
+                            Hales, Alfred W. (2002), "Hypercube tic-tac-toe", <i>More games of no
+                                chance (Berkeley, CA, 2000)</i>, Math. Sci. Res. Inst. Publ.
+                            <b>42</b>, Cambridge: Cambridge Univ. Press, pp.&nbsp;167â€“182, <a
+                                    href="https://en.wikipedia.org/wiki/Mathematical_Reviews"
+                                    title="Mathematical Reviews">MR</a>&nbsp;<a rel="nofollow"
+                                                                                class="external text"
+                                                                                href="https://www.ams.org/mathscinet-getitem?mr=1973012">1973012</a></cite><span
+                                title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.atitle=Hypercube+tic-tac-toe&amp;rft.aufirst=Solomon+W.&amp;rft.au=Hales%2C+Alfred+W.&amp;rft.aulast=Golomb&amp;rft.btitle=More+games+of+no+chance+%28Berkeley%2C+CA%2C+2000%29&amp;rft.date=2002&amp;rft.genre=bookitem&amp;rft_id=%2F%2Fwww.ams.org%2Fmathscinet-getitem%3Fmr%3D1973012&amp;rft.pages=167-182&amp;rft.place=Cambridge&amp;rft.pub=Cambridge+Univ.+Press&amp;rft.series=Math.+Sci.+Res.+Inst.+Publ.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook"
+                                class="Z3988"><span
+                                style="display:none;">&nbsp;</span></span>.</span></li>
+                    <li id="cite_note-10"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-10"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><cite id="CITEREFAverbachChein1980"
+                                                         class="citation">Averbach, Bonnie; Chein,
+                        Orin (1980), <a rel="nofollow" class="external text"
+                                        href="http://books.google.com/books?id=xRJxJ7L9sq8C&amp;pg=PA252"><i>Problem
+                            Solving Through Recreational Mathematics</i></a>, Dover, p.&nbsp;252, <a
+                                href="https://en.wikipedia.org/wiki/International_Standard_Book_Number"
+                                title="International Standard Book Number">ISBN</a>&nbsp;<a
+                                href="https://en.wikipedia.org/wiki/Special:BookSources/9780486131740"
+                                title="Special:BookSources/9780486131740">9780486131740</a></cite><span
+                            title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.au=Chein%2C+Orin&amp;rft.aufirst=Bonnie&amp;rft.aulast=Averbach&amp;rft.btitle=Problem+Solving+Through+Recreational+Mathematics&amp;rft.date=1980&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DxRJxJ7L9sq8C%26pg%3DPA252&amp;rft.isbn=9780486131740&amp;rft.pages=252&amp;rft.pub=Dover&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook"
+                            class="Z3988"><span style="display:none;">&nbsp;</span></span>.</span>
+                    </li>
+                    <li id="cite_note-11"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-11"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><cite id="CITEREFSchumer2004" class="citation">Schumer,
+                        Peter D. (2004), <a rel="nofollow" class="external text"
+                                            href="http://books.google.com/books?id=tV__OQ8LZcgC&amp;pg=PA71"><i>Mathematical
+                            Journeys</i></a>, John Wiley &amp; Sons, pp.&nbsp;71â€“72, <a
+                                href="https://en.wikipedia.org/wiki/International_Standard_Book_Number"
+                                title="International Standard Book Number">ISBN</a>&nbsp;<a
+                                href="https://en.wikipedia.org/wiki/Special:BookSources/9780471220664"
+                                title="Special:BookSources/9780471220664">9780471220664</a></cite><span
+                            title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.aufirst=Peter+D.&amp;rft.aulast=Schumer&amp;rft.btitle=Mathematical+Journeys&amp;rft.date=2004&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DtV__OQ8LZcgC%26pg%3DPA71&amp;rft.isbn=9780471220664&amp;rft.pages=71-72&amp;rft.pub=John+Wiley+%26+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook"
+                            class="Z3988"><span style="display:none;">&nbsp;</span></span>.</span>
+                    </li>
+                    <li id="cite_note-12"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-12"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><a rel="nofollow" class="external text"
+                                                      href="http://boardgamegeek.com/boardgame/19584/check-lines">Check
+                        Lines</a>, BoardGameGeek, retrieved 2013-09-13.</span></li>
+                    <li id="cite_note-13"><span class="mw-cite-backlink"><b><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe#cite_ref-13"><span
+                            class="cite-accessibility-label">Jump up </span>^</a></b></span> <span
+                            class="reference-text"><cite class="citation journal">Goff, Allan
+                        (November 2006). "Quantum tic-tac-toe: A teaching metaphor for superposition
+                        in quantum mechanics". <i>American Journal of Physics</i> (College Park, MD:
+                        American Association of Physics Teachers) <b>74</b> (11): 962â€“973. <a
+                                href="https://en.wikipedia.org/wiki/Digital_object_identifier"
+                                title="Digital object identifier">doi</a>:<a rel="nofollow"
+                                                                             class="external text"
+                                                                             href="https://dx.doi.org/10.1119%2F1.2213635">10.1119/1.2213635</a>.
+                        <a href="https://en.wikipedia.org/wiki/International_Standard_Serial_Number"
+                           title="International Standard Serial Number">ISSN</a>&nbsp;<a
+                                rel="nofollow" class="external text"
+                                href="https://www.worldcat.org/issn/0002-9505">0002-9505</a>.</cite><span
+                            title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ATic-tac-toe&amp;rft.atitle=Quantum+tic-tac-toe%3A+A+teaching+metaphor+for+superposition+in+quantum+mechanics&amp;rft.aufirst=Allan&amp;rft.aulast=Goff&amp;rft.date=2006-11&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1119%2F1.2213635&amp;rft.issn=0002-9505&amp;rft.issue=11&amp;rft.jtitle=American+Journal+of+Physics&amp;rft.pages=962-973&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=74"
+                            class="Z3988"><span style="display:none;">&nbsp;</span></span></span>
+                    </li>
+                </ol>
+            </div>
+            <h2><span class="mw-headline" id="External_links">External links</span><span
+                    class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                    href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit&amp;section=10"
+                    title="Edit section: External links">edit</a><span
+                    class="mw-editsection-bracket">]</span></span></h2>
+            <table class="mbox-small plainlinks sistersitebox"
+                   style="border:1px solid #aaa;background-color:#f9f9f9">
+                <tbody>
+                <tr>
+                    <td class="mbox-image"><img alt=""
+                                                src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/37px-Wiktionary-logo-en.svg.png"
+                                                width="37" height="40"
+                                                srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/55px-Wiktionary-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/73px-Wiktionary-logo-en.svg.png 2x"
+                                                data-file-width="1000" data-file-height="1089"></td>
+                    <td class="mbox-text plainlist">Look up <i><b><a
+                            href="https://en.wiktionary.org/wiki/Special:Search/tic-tac-toe"
+                            class="extiw"
+                            title="wiktionary:Special:Search/tic-tac-toe">tic-tac-toe</a></b></i> in
+                        Wiktionary, the free dictionary.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="mbox-small plainlinks sistersitebox"
+                   style="border:1px solid #aaa;background-color:#f9f9f9">
+                <tbody>
+                <tr>
+                    <td class="mbox-image"><img alt=""
+                                                src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/30px-Commons-logo.svg.png"
+                                                width="30" height="40"
+                                                srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"
+                                                data-file-width="1024" data-file-height="1376"></td>
+                    <td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a
+                            href="https://commons.wikimedia.org/wiki/Category:Tic_Tac_Toe"
+                            class="extiw" title="commons:Category:Tic Tac Toe">Tic Tac
+                        Toe</a></b></i>.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li><a rel="nofollow" class="external text"
+                       href="http://mathworld.wolfram.com/Tic-Tac-Toe.html">Wolfram's MathWorld</a>
+                </li>
+                <li><a rel="nofollow" class="external text"
+                       href="http://chet-weger.herokuapp.com/play_ttt/">Interactive Tic-Tac-Toe</a>
+                    - Example web app with an AI that plays tic-tac-toe.
+                </li>
+                <li><a rel="nofollow" class="external text"
+                       href="http://mathwithbaddrawings.com/2013/06/16/ultimate-tic-tac-toe/">Ultimate
+                    Tic Tac Toe</a> - 9-board variation
+                </li>
+            </ul>
+
+
+            <!--
+            NewPP limit report
+            Parsed by mw1088
+            Cached time: 20160209185921
+            Cache expiry: 2592000
+            Dynamic content: false
+            CPU time usage: 0.347 seconds
+            Real time usage: 0.434 seconds
+            Preprocessor visited node count: 1389/1000000
+            Preprocessor generated node count: 0/1500000
+            Postâ€�expand include size: 24585/2097152 bytes
+            Template argument size: 847/2097152 bytes
+            Highest expansion depth: 9/40
+            Expensive parser function count: 2/500
+            Lua time usage: 0.118/10.000 seconds
+            Lua memory usage: 2.84 MB/50 MB
+            Number of Wikibase entities loaded: 1-->
+
+            <!--
+            Transclusion expansion time report (%,ms,calls,template)
+            100.00%  350.039      1 - -total
+             41.98%  146.951      1 - Template:Reflist
+             17.23%   60.300      2 - Template:Cite_web
+             14.40%   50.404      1 - Template:Infobox_game
+             13.14%   45.996      1 - Template:Infobox
+              9.83%   34.412      1 - Template:Redirect2
+              9.58%   33.518      1 - Template:Commons_category
+              7.86%   27.528      1 - Template:Hatnote
+              6.97%   24.408      3 - Template:Citation
+              6.61%   23.154      4 - Template:Aqua_(color)
+            -->
+
+            <!-- Saved in parser cache with key enwiki:pcache:idhash:31609-0!*!0!!en!4!* and timestamp 20160209185920 and revision id 703701946
+             -->
+            <noscript>&lt;img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1"
+                alt="" title="" width="1" height="1" style="border: none; position: absolute;"
+                /&gt;</noscript>
+        </div>
+        <div class="printfooter">
+            Retrieved from "<a dir="ltr"
+                               href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;oldid=703701946">https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;oldid=703701946</a>"
+        </div>
+        <div id="catlinks" class="catlinks" data-mw="interface">
+            <div id="mw-normal-catlinks" class="mw-normal-catlinks"><a
+                    href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>:
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Category:Tic-tac-toe"
+                           title="Category:Tic-tac-toe">Tic-tac-toe</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Category:Abstract_strategy_games"
+                           title="Category:Abstract strategy games">Abstract strategy games</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Category:Mathematical_games"
+                           title="Category:Mathematical games">Mathematical games</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Category:Paper-and-pencil_games"
+                           title="Category:Paper-and-pencil games">Paper-and-pencil games</a></li>
+                </ul>
+            </div>
+            <div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden
+                categories:
+                <ul>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Category:Commons_category_with_local_link_same_as_on_Wikidata"
+                           title="Category:Commons category with local link same as on Wikidata">Commons
+                            category with local link same as on Wikidata</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="visualClear"></div>
+    </div>
+</div>
+<div id="mw-navigation">
+    <h2>Navigation menu</h2>
+
+    <div id="mw-head">
+        <div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+            <h3 id="p-personal-label">Personal tools</h3>
+            <ul>
+                <li id="pt-anonuserpage">Not logged in</li>
+                <li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk"
+                                        title="Discussion about edits from this IP address [alt-shift-n]"
+                                        accesskey="n">Talk</a></li>
+                <li id="pt-anoncontribs"><a
+                        href="https://en.wikipedia.org/wiki/Special:MyContributions"
+                        title="A list of edits made from this IP address [alt-shift-y]"
+                        accesskey="y">Contributions</a></li>
+                <li id="pt-createaccount"><a
+                        href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Tic-tac-toe&amp;type=signup"
+                        title="You are encouraged to create an account and log in; however, it is not mandatory">Create
+                    account</a></li>
+                <li id="pt-login"><a
+                        href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Tic-tac-toe"
+                        title="You&#39;re encouraged to log in; however, it&#39;s not mandatory. [alt-shift-o]"
+                        accesskey="o">Log in</a></li>
+            </ul>
+        </div>
+        <div id="left-navigation">
+            <div id="p-namespaces" role="navigation" class="vectorTabs"
+                 aria-labelledby="p-namespaces-label">
+                <h3 id="p-namespaces-label">Namespaces</h3>
+                <ul>
+                    <li id="ca-nstab-main" class="selected"><span><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe"
+                            title="View the content page [alt-shift-c]"
+                            accesskey="c">Article</a></span></li>
+                    <li id="ca-talk"><span><a href="https://en.wikipedia.org/wiki/Talk:Tic-tac-toe"
+                                              title="Discussion about the content page [alt-shift-t]"
+                                              accesskey="t" rel="discussion">Talk</a></span></li>
+                </ul>
+            </div>
+            <div id="p-variants" role="navigation" class="vectorMenu emptyPortlet"
+                 aria-labelledby="p-variants-label">
+                <h3 id="p-variants-label" tabindex="0">
+                    <span>Variants</span><a href="https://en.wikipedia.org/wiki/Tic-tac-toe#"
+                                            tabindex="-1"></a>
+                </h3>
+
+                <div class="menu">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="right-navigation">
+            <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                <h3 id="p-views-label">Views</h3>
+                <ul>
+                    <li id="ca-view" class="selected"><span><a
+                            href="https://en.wikipedia.org/wiki/Tic-tac-toe">Read</a></span></li>
+                    <li id="ca-edit"><span><a
+                            href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=edit"
+                            title="Edit this page [alt-shift-e]" accesskey="e">Edit</a></span></li>
+                    <li id="ca-history" class="collapsible"><span><a
+                            href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=history"
+                            title="Past revisions of this page [alt-shift-h]" accesskey="h">View
+                        history</a></span></li>
+                </ul>
+            </div>
+            <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet"
+                 aria-labelledby="p-cactions-label">
+                <h3 id="p-cactions-label" tabindex="0"><span>More</span><a
+                        href="https://en.wikipedia.org/wiki/Tic-tac-toe#" tabindex="-1"></a></h3>
+
+                <div class="menu">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <div id="p-search" role="search">
+                <h3>
+                    <label for="searchInput">Search</label>
+                </h3>
+
+                <form action="https://en.wikipedia.org/w/index.php" id="searchform">
+                    <div id="simpleSearch">
+                        <input type="search" name="search" placeholder="Search"
+                               title="Search Wikipedia [alt-shift-f]" accesskey="f" id="searchInput"
+                               tabindex="1" autocomplete="off"><input type="hidden"
+                                                                      value="Special:Search"
+                                                                      name="title"><input
+                            type="submit" name="go" value="Go"
+                            title="Go to a page with this exact name if it exists" id="searchButton"
+                            class="searchButton"></div>
+                </form>
+            </div>
+            <div id="priam_top_button" class="priam_not_logged priam_wikipedia">
+                <div id="priam_button_user">
+                    <div class="priam_logo priam_blue"></div>
+                    <div class="priam_dropdown_arrow">
+                        <div class="priam_dropdown">
+                            <div class="priam_bubble_arrow_border"></div>
+                            <div class="priam_bubble_arrow"></div>
+                            <div class="priam_fieldset_shadow">
+                                <div class="priam_fieldset_first"><h3>Login</h3>
+
+                                    <div class="priam_right"><a id="priam_signup_twitter"
+                                                                class="priam_signup_link"
+                                                                href="https://www.technologiesaintjoseph.com/signup/twitterAuth">
+                                        <div class="priam_logo_wrapper"><span
+                                                class="priam_icon"></span></div>
+                                        Twitter</a></div>
+                                    <div class="priam_left"><a id="priam_signup_facebook"
+                                                               class="priam_signup_link"
+                                                               href="https://www.technologiesaintjoseph.com/signup/facebookAuth">
+                                        <div class="priam_logo_wrapper"><span
+                                                class="priam_icon"></span></div>
+                                        Facebook</a></div>
+                                    <div style="clear: both"></div>
+                                </div>
+                                <div class="priam_fieldset_last">
+                                    <ul class="settings">
+                                        <li><a target="_blank"
+                                               href="http://www.technologiesaintjoseph.com/frequently-asked-questions">Help</a>
+                                        </li>
+                                        <li><a target="_blank"
+                                               href="http://www.technologiesaintjoseph.com/privacy">Privacy</a>
+                                        </li>
+                                        <li><a target="_blank"
+                                               href="http://www.technologiesaintjoseph.com/terms-of-service">Terms</a>
+                                        </li>
+                                    </ul>
+                                    <div class="priam_footer_logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mw-panel">
+        <div id="p-logo" role="banner"><a class="mw-wiki-logo"
+                                          href="https://en.wikipedia.org/wiki/Main_Page"
+                                          title="Visit the main page"></a></div>
+        <div class="portal" role="navigation" id="p-navigation"
+             aria-labelledby="p-navigation-label">
+            <h3 id="p-navigation-label">Navigation</h3>
+
+            <div class="body">
+                <ul>
+                    <li id="n-mainpage-description"><a
+                            href="https://en.wikipedia.org/wiki/Main_Page"
+                            title="Visit the main page [alt-shift-z]" accesskey="z">Main page</a>
+                    </li>
+                    <li id="n-contents"><a href="https://en.wikipedia.org/wiki/Portal:Contents"
+                                           title="Guides to browsing Wikipedia">Contents</a></li>
+                    <li id="n-featuredcontent"><a
+                            href="https://en.wikipedia.org/wiki/Portal:Featured_content"
+                            title="Featured content â€“ the best of Wikipedia">Featured content</a>
+                    </li>
+                    <li id="n-currentevents"><a
+                            href="https://en.wikipedia.org/wiki/Portal:Current_events"
+                            title="Find background information on current events">Current events</a>
+                    </li>
+                    <li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random"
+                                             title="Load a random article [alt-shift-x]"
+                                             accesskey="x">Random article</a></li>
+                    <li id="n-sitesupport"><a
+                            href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en"
+                            title="Support us">Donate to Wikipedia</a></li>
+                    <li id="n-shoplink"><a href="https://shop.wikimedia.org/"
+                                           title="Visit the Wikipedia store">Wikipedia store</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-interaction"
+             aria-labelledby="p-interaction-label">
+            <h3 id="p-interaction-label">Interaction</h3>
+
+            <div class="body">
+                <ul>
+                    <li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents"
+                                       title="Guidance on how to use and edit Wikipedia">Help</a>
+                    </li>
+                    <li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About"
+                                            title="Find out about Wikipedia">About Wikipedia</a>
+                    </li>
+                    <li id="n-portal"><a
+                            href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal"
+                            title="About the project, what you can do, where to find things">Community
+                        portal</a></li>
+                    <li id="n-recentchanges"><a
+                            href="https://en.wikipedia.org/wiki/Special:RecentChanges"
+                            title="A list of recent changes in the wiki [alt-shift-r]"
+                            accesskey="r">Recent changes</a></li>
+                    <li id="n-contactpage"><a
+                            href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us"
+                            title="How to contact Wikipedia">Contact page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+            <h3 id="p-tb-label">Tools</h3>
+
+            <div class="body">
+                <ul>
+                    <li id="t-whatlinkshere"><a
+                            href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Tic-tac-toe"
+                            title="List of all English Wikipedia pages containing links to this page [alt-shift-j]"
+                            accesskey="j">What links here</a></li>
+                    <li id="t-recentchangeslinked"><a
+                            href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Tic-tac-toe"
+                            title="Recent changes in pages linked from this page [alt-shift-k]"
+                            accesskey="k">Related changes</a></li>
+                    <li id="t-upload"><a
+                            href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard"
+                            title="Upload files [alt-shift-u]" accesskey="u">Upload file</a></li>
+                    <li id="t-specialpages"><a
+                            href="https://en.wikipedia.org/wiki/Special:SpecialPages"
+                            title="A list of all special pages [alt-shift-q]" accesskey="q">Special
+                        pages</a></li>
+                    <li id="t-permalink"><a
+                            href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;oldid=703701946"
+                            title="Permanent link to this revision of the page">Permanent link</a>
+                    </li>
+                    <li id="t-info"><a
+                            href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;action=info"
+                            title="More information about this page">Page information</a></li>
+                    <li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q210339"
+                                           title="Link to connected data repository item [alt-shift-g]"
+                                           accesskey="g">Wikidata item</a></li>
+                    <li id="t-cite"><a
+                            href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Tic-tac-toe&amp;id=703701946"
+                            title="Information on how to cite this page">Cite this page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-coll-print_export"
+             aria-labelledby="p-coll-print_export-label">
+            <h3 id="p-coll-print_export-label">Print/export</h3>
+
+            <div class="body">
+                <ul>
+                    <li id="coll-create_a_book"><a
+                            href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Tic-tac-toe">Create
+                        a book</a></li>
+                    <li id="coll-download-as-rdf2latex"><a
+                            href="https://en.wikipedia.org/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Tic-tac-toe&amp;returnto=Tic-tac-toe&amp;oldid=703701946&amp;writer=rdf2latex">Download
+                        as PDF</a></li>
+                    <li id="t-print"><a
+                            href="https://en.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;printable=yes"
+                            title="Printable version of this page [alt-shift-p]" accesskey="p">Printable
+                        version</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label"><span
+                class="uls-settings-trigger" title="Language settings" tabindex="0" role="button"
+                aria-haspopup="true"></span>
+
+            <h3 id="p-lang-label">Languages</h3>
+
+            <div class="body">
+                <ul>
+                    <li class="interlanguage-link interwiki-ar"><a
+                            href="https://ar.wikipedia.org/wiki/%D9%84%D8%B9%D8%A8%D8%A9_%D8%A5%D9%83%D8%B3-%D8%A3%D9%88"
+                            title="Ù„Ø¹Ø¨Ø© Ø¥ÙƒØ³-Ø£Ùˆ â€“ Arabic" lang="ar" hreflang="ar">Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-be"><a
+                            href="https://be.wikipedia.org/wiki/%D0%9A%D1%80%D1%8B%D0%B6%D1%8B%D0%BA%D1%96-%D0%BD%D1%83%D0%BB%D1%96%D0%BA%D1%96"
+                            title="ÐšÑ€Ñ‹Ð¶Ñ‹ÐºÑ–-Ð½ÑƒÐ»Ñ–ÐºÑ– â€“ Belarusian" lang="be"
+                            hreflang="be">Ð‘ÐµÐ»Ð°Ñ€ÑƒÑ�ÐºÐ°Ñ�</a></li>
+                    <li class="interlanguage-link interwiki-be-x-old"><a
+                            href="https://be-x-old.wikipedia.org/wiki/%D0%9A%D1%80%D1%8B%D0%B6%D1%8B%D0%BA%D1%96-%D0%BD%D1%83%D0%BB%D1%96%D0%BA%D1%96"
+                            title="ÐšÑ€Ñ‹Ð¶Ñ‹ÐºÑ–-Ð½ÑƒÐ»Ñ–ÐºÑ– â€“ Ð±ÐµÐ»Ð°Ñ€ÑƒÑ�ÐºÐ°Ñ� (Ñ‚Ð°Ñ€Ð°ÑˆÐºÐµÐ²Ñ–Ñ†Ð°)â€Ž"
+                            lang="be-x-old" hreflang="be-x-old">Ð‘ÐµÐ»Ð°Ñ€ÑƒÑ�ÐºÐ°Ñ�
+                        (Ñ‚Ð°Ñ€Ð°ÑˆÐºÐµÐ²Ñ–Ñ†Ð°)â€Ž</a></li>
+                    <li class="interlanguage-link interwiki-ca"><a
+                            href="https://ca.wikipedia.org/wiki/Tres_en_ratlla"
+                            title="Tres en ratlla â€“ Catalan" lang="ca" hreflang="ca">CatalÃ </a>
+                    </li>
+                    <li class="interlanguage-link interwiki-da"><a
+                            href="https://da.wikipedia.org/wiki/Kryds_og_bolle"
+                            title="Kryds og bolle â€“ Danish" lang="da" hreflang="da">Dansk</a></li>
+                    <li class="interlanguage-link interwiki-de"><a
+                            href="https://de.wikipedia.org/wiki/Tic-Tac-Toe"
+                            title="Tic-Tac-Toe â€“ German" lang="de" hreflang="de">Deutsch</a></li>
+                    <li class="interlanguage-link interwiki-es"><a
+                            href="https://es.wikipedia.org/wiki/Tres_en_l%C3%ADnea"
+                            title="Tres en lÃ­nea â€“ Spanish" lang="es" hreflang="es">EspaÃ±ol</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-eo"><a
+                            href="https://eo.wikipedia.org/wiki/Tiktakto"
+                            title="Tiktakto â€“ Esperanto" lang="eo" hreflang="eo">Esperanto</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-eu"><a
+                            href="https://eu.wikipedia.org/wiki/Hiruko_artzain-joko"
+                            title="Hiruko artzain-joko â€“ Basque" lang="eu"
+                            hreflang="eu">Euskara</a></li>
+                    <li class="interlanguage-link interwiki-fa"><a
+                            href="https://fa.wikipedia.org/wiki/%D8%A7%DB%8C%DA%A9%D8%B3_%D8%A7%D9%88"
+                            title="Ø§ÛŒÚ©Ø³ Ø§Ùˆ â€“ Persian" lang="fa" hreflang="fa">Ù�Ø§Ø±Ø³ÛŒ</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-fr"><a
+                            href="https://fr.wikipedia.org/wiki/Tic-tac-toe"
+                            title="Tic-tac-toe â€“ French" lang="fr" hreflang="fr">FranÃ§ais</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-gl"><a
+                            href="https://gl.wikipedia.org/wiki/Pai_fillo_nai"
+                            title="Pai fillo nai â€“ Galician" lang="gl" hreflang="gl">Galego</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-ko"><a
+                            href="https://ko.wikipedia.org/wiki/%ED%8B%B1%ED%83%9D%ED%86%A0"
+                            title="í‹±íƒ�í†  â€“ Korean" lang="ko" hreflang="ko">í•œêµ­ì–´</a></li>
+                    <li class="interlanguage-link interwiki-hr"><a
+                            href="https://hr.wikipedia.org/wiki/Kru%C5%BEi%C4%87_i_kri%C5%BEi%C4%87"
+                            title="KruÅ¾iÄ‡ i kriÅ¾iÄ‡ â€“ Croatian" lang="hr" hreflang="hr">Hrvatski</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-it"><a
+                            href="https://it.wikipedia.org/wiki/Tris_(gioco)"
+                            title="Tris (gioco) â€“ Italian" lang="it" hreflang="it">Italiano</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-he"><a
+                            href="https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A7%D7%A1_%D7%A2%D7%99%D7%92%D7%95%D7%9C"
+                            title="×�×™×§×¡ ×¢×™×’×•×œ â€“ Hebrew" lang="he" hreflang="he">×¢×‘×¨×™×ª</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-la"><a
+                            href="https://la.wikipedia.org/wiki/Cruces_et_circuli"
+                            title="Cruces et circuli â€“ Latin" lang="la" hreflang="la">Latina</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-lb"><a
+                            href="https://lb.wikipedia.org/wiki/Tic_Tac_Toe"
+                            title="Tic Tac Toe â€“ Luxembourgish" lang="lb" hreflang="lb">LÃ«tzebuergesch</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-lt"><a
+                            href="https://lt.wikipedia.org/wiki/Kry%C5%BEiukai-nuliukai"
+                            title="KryÅ¾iukai-nuliukai â€“ Lithuanian" lang="lt" hreflang="lt">LietuviÅ³</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-hu"><a
+                            href="https://hu.wikipedia.org/wiki/Tic-tac-toe"
+                            title="Tic-tac-toe â€“ Hungarian" lang="hu" hreflang="hu">Magyar</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-ms"><a
+                            href="https://ms.wikipedia.org/wiki/Tic-tac-toe"
+                            title="Tic-tac-toe â€“ Malay" lang="ms" hreflang="ms">Bahasa Melayu</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-nl"><a
+                            href="https://nl.wikipedia.org/wiki/Boter-kaas-en-eieren"
+                            title="Boter-kaas-en-eieren â€“ Dutch" lang="nl" hreflang="nl">Nederlands</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-ja"><a
+                            href="https://ja.wikipedia.org/wiki/%E4%B8%89%E7%9B%AE%E4%B8%A6%E3%81%B9"
+                            title="ä¸‰ç›®ä¸¦ã�¹ â€“ Japanese" lang="ja" hreflang="ja">æ—¥æœ¬èªž</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-no"><a
+                            href="https://no.wikipedia.org/wiki/Tripp-trapp-tresko"
+                            title="Tripp-trapp-tresko â€“ Norwegian" lang="no" hreflang="no">Norsk
+                        bokmÃ¥l</a></li>
+                    <li class="interlanguage-link interwiki-or"><a
+                            href="https://or.wikipedia.org/wiki/%E0%AC%9B%E0%AC%95%E0%AC%BF-%E0%AC%B6%E0%AD%81%E0%AC%A8"
+                            title="à¬›à¬•à¬¿-à¬¶à­�à¬¨ â€“ Oriya" lang="or" hreflang="or">à¬“à¬¡à¬¼à¬¿à¬†</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-pl"><a
+                            href="https://pl.wikipedia.org/wiki/K%C3%B3%C5%82ko_i_krzy%C5%BCyk"
+                            title="KÃ³Å‚ko i krzyÅ¼yk â€“ Polish" lang="pl" hreflang="pl">Polski</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-pt"><a
+                            href="https://pt.wikipedia.org/wiki/Jogo_da_velha"
+                            title="Jogo da velha â€“ Portuguese" lang="pt"
+                            hreflang="pt">PortuguÃªs</a></li>
+                    <li class="interlanguage-link interwiki-ro"><a
+                            href="https://ro.wikipedia.org/wiki/X_%C8%99i_0"
+                            title="X È™i 0 â€“ Romanian" lang="ro" hreflang="ro">RomÃ¢nÄƒ</a></li>
+                    <li class="interlanguage-link interwiki-ru"><a
+                            href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D0%B8-%D0%BD%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8"
+                            title="ÐšÑ€ÐµÑ�Ñ‚Ð¸ÐºÐ¸-Ð½Ð¾Ð»Ð¸ÐºÐ¸ â€“ Russian" lang="ru"
+                            hreflang="ru">Ð ÑƒÑ�Ñ�ÐºÐ¸Ð¹</a></li>
+                    <li class="interlanguage-link interwiki-stq"><a
+                            href="https://stq.wikipedia.org/wiki/Tik_Tak_Tul"
+                            title="Tik Tak Tul â€“ Saterland Frisian" lang="stq" hreflang="stq">Seeltersk</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-sr"><a
+                            href="https://sr.wikipedia.org/wiki/%D0%98%D0%BA%D1%81-%D0%BE%D0%BA%D1%81_(%D0%B8%D0%B3%D1%80%D0%B0)"
+                            title="Ð˜ÐºÑ�-Ð¾ÐºÑ� (Ð¸Ð³Ñ€Ð°) â€“ Serbian" lang="sr" hreflang="sr">Ð¡Ñ€Ð¿Ñ�ÐºÐ¸
+                        / srpski</a></li>
+                    <li class="interlanguage-link interwiki-sh"><a
+                            href="https://sh.wikipedia.org/wiki/Iks-oks_(igra)"
+                            title="Iks-oks (igra) â€“ Serbo-Croatian" lang="sh" hreflang="sh">Srpskohrvatski
+                        / Ñ�Ñ€Ð¿Ñ�ÐºÐ¾Ñ…Ñ€Ð²Ð°Ñ‚Ñ�ÐºÐ¸</a></li>
+                    <li class="interlanguage-link interwiki-fi"><a
+                            href="https://fi.wikipedia.org/wiki/Ristinolla"
+                            title="Ristinolla â€“ Finnish" lang="fi" hreflang="fi">Suomi</a></li>
+                    <li class="interlanguage-link interwiki-sv"><a
+                            href="https://sv.wikipedia.org/wiki/Tre_i_rad"
+                            title="Tre i rad â€“ Swedish" lang="sv" hreflang="sv">Svenska</a></li>
+                    <li class="interlanguage-link interwiki-ta"><a
+                            href="https://ta.wikipedia.org/wiki/%E0%AE%9F%E0%AE%BF%E0%AE%95%E0%AF%8D_%E0%AE%9F%E0%AF%87%E0%AE%95%E0%AF%8D_%E0%AE%9F%E0%AF%8B"
+                            title="à®Ÿà®¿à®•à¯� à®Ÿà¯‡à®•à¯� à®Ÿà¯‹ â€“ Tamil" lang="ta"
+                            hreflang="ta">à®¤à®®à®¿à®´à¯�</a></li>
+                    <li class="interlanguage-link interwiki-th"><a
+                            href="https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%AD%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%8B%E0%B9%8C"
+                            title="à¹‚à¸­à¹€à¸­à¸�à¸‹à¹Œ â€“ Thai" lang="th"
+                            hreflang="th">à¹„à¸—à¸¢</a></li>
+                    <li class="interlanguage-link interwiki-uk"><a
+                            href="https://uk.wikipedia.org/wiki/%D0%A5%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D0%B8-%D0%BD%D1%83%D0%BB%D0%B8%D0%BA%D0%B8"
+                            title="Ð¥Ñ€ÐµÑ�Ñ‚Ð¸ÐºÐ¸-Ð½ÑƒÐ»Ð¸ÐºÐ¸ â€“ Ukrainian" lang="uk"
+                            hreflang="uk">Ð£ÐºÑ€Ð°Ñ—Ð½Ñ�ÑŒÐºÐ°</a></li>
+                    <li class="interlanguage-link interwiki-vi"><a
+                            href="https://vi.wikipedia.org/wiki/Tic-tac-toe"
+                            title="Tic-tac-toe â€“ Vietnamese" lang="vi" hreflang="vi">Tiáº¿ng
+                        Viá»‡t</a></li>
+                    <li class="interlanguage-link interwiki-zh-yue"><a
+                            href="https://zh-yue.wikipedia.org/wiki/%E6%89%93%E4%BA%95"
+                            title="æ‰“äº• â€“ Cantonese" lang="zh-yue" hreflang="zh-yue">ç²µèªž</a>
+                    </li>
+                    <li class="interlanguage-link interwiki-zh"><a
+                            href="https://zh.wikipedia.org/wiki/%E4%BA%95%E5%AD%97%E6%A3%8B"
+                            title="äº•å­—æ£‹ â€“ Chinese" lang="zh" hreflang="zh">ä¸­æ–‡</a></li>
+                </ul>
+                <div class="after-portlet after-portlet-lang"><span
+                        class="wb-langlinks-edit wb-langlinks-link"><a
+                        href="https://www.wikidata.org/wiki/Q210339#sitelinks-wikipedia"
+                        title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer" role="contentinfo">
+    <ul id="footer-info">
+        <li id="footer-info-lastmod"> This page was last modified on 7 February 2016, at 02:56.</li>
+        <li id="footer-info-copyright">Text is available under the <a rel="license"
+                                                                      href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative
+            Commons Attribution-ShareAlike License</a><a rel="license"
+                                                         href="https://creativecommons.org/licenses/by-sa/3.0/"
+                                                         style="display:none;"></a>;
+            additional terms may apply. By using this site, you agree to the <a
+                    href="https://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a
+                    href="https://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>.
+            WikipediaÂ® is a registered trademark of the <a
+                    href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a
+            non-profit organization.
+        </li>
+    </ul>
+    <ul id="footer-places">
+        <li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy"
+                                          title="wmf:Privacy policy">Privacy policy</a></li>
+        <li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About"
+                                        title="Wikipedia:About">About Wikipedia</a></li>
+        <li id="footer-places-disclaimer"><a
+                href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer"
+                title="Wikipedia:General disclaimer">Disclaimers</a></li>
+        <li id="footer-places-contact"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact
+            Wikipedia</a></li>
+        <li id="footer-places-developers"><a
+                href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a>
+        </li>
+        <li id="footer-places-cookiestatement"><a
+                href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a>
+        </li>
+        <li id="footer-places-mobileview"><a
+                href="https://en.m.wikipedia.org/w/index.php?title=Tic-tac-toe&amp;mobileaction=toggle_view_mobile"
+                class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+    </ul>
+    <ul id="footer-icons" class="noprint">
+        <li id="footer-copyrightico">
+            <a href="https://wikimediafoundation.org/"><img
+                    src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/wikimedia-button.png"
+                    srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x"
+                    width="88" height="31" alt="Wikimedia Foundation"></a></li>
+        <li id="footer-poweredbyico">
+            <a href="https://www.mediawiki.org/"><img
+                    src="./Tic-tac-toe - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png"
+                    alt="Powered by MediaWiki"
+                    srcset="/static/1.27.0-wmf.12/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.27.0-wmf.12/resources/assets/poweredby_mediawiki_176x62.png 2x"
+                    width="88" height="31"></a></li>
+    </ul>
+    <div style="clear:both"></div>
+</div>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );
+
+</script>
+<script>(window.RLQ = window.RLQ || []).push(function () {
+mw.config.set({"wgBackendResponseTime":72,"wgHostname":"mw1250"}); /* @nomin */
+} );
+
+</script>
+
+
+<div style="position:fixed; top:0; left:0; overflow:hidden;"><input
+        style="position:absolute; left:-300px;" type="text" value="" id="focus_retriever"
+        readonly="true"></div>
+<div class="suggestions" style="display: none; font-size: 13px;">
+    <div class="suggestions-results"></div>
+    <div class="suggestions-special"></div>
+</div>
+</body>
+</html>
