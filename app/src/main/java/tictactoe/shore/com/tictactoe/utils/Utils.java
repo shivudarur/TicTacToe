@@ -10,4 +10,7 @@ public class Utils {
     public static void showToast(Activity activity, int resourceId) {
         Toast.makeText(activity, resourceId, Toast.LENGTH_LONG).show();
     }
+    public static void showToast(Activity activity, String toastMessage) {
+        Toast.makeText(activity, toastMessage, Toast.LENGTH_LONG).show();
+    }
 }
