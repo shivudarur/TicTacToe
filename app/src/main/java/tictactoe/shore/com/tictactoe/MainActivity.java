@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements GameboardFragment.GameboardFragmentEventsListener, PlayersLoginFragment.PlayersLoginFragmentEventsListener, LeaderboardFragment.LeaderboardFragmentEventsListener {
+public class MainActivity extends AppCompatActivity implements GameboardFragment.GameboardFragmentEventsListener, PlayersLoginFragment.PlayersLoginFragmentEventsListener, LeaderboardFragment.LeaderboardFragmentEventsListener, AboutFragment.AboutFragmentEventsListener {
 
 
     @Override

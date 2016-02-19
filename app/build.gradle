@@ -9,15 +9,16 @@ android {
     }
     sourceSets {
 
-        androidTest {
-            java.srcDirs = ['androidTest/java']
-        }
+//       Commenting out Tests for this build.
+         /*androidTest {
+             java.srcDirs = ['androidTest/java']
+         }*/
     }
 
     defaultConfig {
         applicationId "tictactoe.shore.com.tictactoe"
-        minSdkVersion 23
-        targetSdkVersion 23
+        minSdkVersion 15
+        targetSdkVersion 15
         versionCode 1
         versionName "1.0"
     }
