@@ -1,5 +1,6 @@
 package tictactoe.shore.com.tictactoe;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
@@ -57,7 +58,7 @@ public class LeaderboardFragment extends Fragment implements View.OnClickListene
     }
 
     private void init() {
-        mRootView.setOnClickListener(this);
+        mRootView.findViewById(R.id.button_new_game).setOnClickListener(this);
         // Initialize recycler view
         mRecyclerView = (RecyclerView) mRootView.findViewById(R.id.recycler_view_players);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -74,7 +75,7 @@ public class LeaderboardFragment extends Fragment implements View.OnClickListene
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(Activity context) {
         super.onAttach(context);
         mDatabaseHandler = new DatabaseHandler(getActivity());
         if (context instanceof LeaderboardFragmentEventsListener) {
