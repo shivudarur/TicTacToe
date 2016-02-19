@@ -1,5 +1,6 @@
 package tictactoe.shore.com.tictactoe;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
@@ -81,7 +82,7 @@ public class PlayersLoginFragment extends Fragment implements View.OnClickListen
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(Activity context) {
         super.onAttach(context);
         if (context instanceof PlayersLoginFragmentEventsListener) {
             mPlayersLoginFragmentEventsListener = (PlayersLoginFragmentEventsListener) context;

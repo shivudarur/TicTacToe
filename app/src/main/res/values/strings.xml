@@ -4,6 +4,7 @@
     <string name="start_game">Start Game</string>
     <string name="new_game">New Game</string>
     <string name="wins">%1s Wins</string>
+    <string name="no_player_won">Game is over. None of the players won</string>
     <string name="proceed_to_leader_board">Proceed To Leader Board</string>
     <string name="top_player">Top Players</string>
     <string name="player1_name_hint">Enter player1 name</string>

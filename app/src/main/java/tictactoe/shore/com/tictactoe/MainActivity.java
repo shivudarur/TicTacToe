@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity implements GameboardFragment
     }
 
     private void setActionBarTitle(int resourceId) {
-        getSupportActionBar().setTitle(resourceId);
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null)
+            actionBar.setTitle(resourceId);
     }
 
     @Override

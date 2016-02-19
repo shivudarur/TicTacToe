@@ -25,8 +25,7 @@
 
     <Button
         android:id="@+id/button_start_game"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/GreenButton"
         android:layout_marginTop="@dimen/view_vertical_spacing"
         android:text="@string/start_game" />
 

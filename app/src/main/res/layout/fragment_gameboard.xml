@@ -3,16 +3,18 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.droidtest.MainActivity$GameboardFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_game_holder">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
         android:id="@+id/ll_header"
-        android:background="@drawable/header_tile"
+        android:padding="@dimen/view_vertical_spacing"
         android:orientation="vertical"
         android:layout_height="wrap_content">
     <LinearLayout
@@ -20,7 +22,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView_player1"
+            android:id="@+id/textView_player2"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -33,7 +35,7 @@
             android:text="@string/score"
             android:textAppearance="?android:attr/textAppearanceLarge" />
         <TextView
-            android:id="@+id/textView_player2"
+            android:id="@+id/textView_player1"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -44,6 +46,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/view_vertical_spacing"
         android:layout_height="wrap_content">
 
         <TextView
@@ -60,7 +63,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView_player1_score"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/view_horizontal_spacing"
+                android:id="@+id/textView_player2_score"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 />
             <View
@@ -69,8 +74,11 @@
                 android:background="@android:color/black"/>
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/view_horizontal_spacing"
+                android:layout_gravity="left"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView_player2_score"
+                android:id="@+id/textView_player1_score"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 />
         </LinearLayout>
@@ -87,10 +95,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/ll_gameboard_holder"
         android:layout_below="@+id/ll_header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/ll_gameboard_holder"
         android:orientation="vertical">
 
         <LinearLayout
@@ -170,6 +178,7 @@
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ll_navigation_buttons_holder"
@@ -182,14 +191,12 @@
 
         <Button
             android:id="@+id/button_proceed_to_leader_board"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/GreenButton"
             android:text="@string/proceed_to_leader_board" />
 
         <Button
             android:id="@+id/button_new_game"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/GreenButton"
             android:layout_marginTop="@dimen/view_vertical_spacing"
             android:text="@string/new_game" />
     </LinearLayout>

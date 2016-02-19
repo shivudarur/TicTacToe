@@ -1,7 +1,7 @@
 package tictactoe.shore.com.tictactoe;
 
+import android.app.Activity;
 import android.app.Fragment;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,18 +27,30 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
 
     private static final char NAUGHT_SYMBOL = 'X';
     private static final char CROSS_SYMBOL = 'O';
+    private static final int TOTAL_NUMBER_OF_MOVES;
+    private static final int NUMBER_OF_ROWS;
     private static final char NONE_WIN_SYMBOL = '\0';
+
+    static {
+        TOTAL_NUMBER_OF_MOVES = 9;
+        NUMBER_OF_ROWS = getNumberOfRows();
+    }
+
     private GameboardFragmentEventsListener mGameboardFragmentEventsListener;
     // Representing the game state:
     private boolean mNoughtsTurn = false; // Who's turn is it? false=X true=O
-    private char mBoard[][] = new char[3][3]; // for now we will represent the mBoard as an array of characters
+    private char mBoard[][] = new char[NUMBER_OF_ROWS][NUMBER_OF_ROWS]; // for now we will represent the mBoard as an array of characters
     private int mPlayer1Score = 0, mPlayer2Score = 0;
     private View mRootView;
-    private LinearLayout mGameboardHolder, mNavigationButtonsHolder;
+    private LinearLayout mGameHolder, mGameboardHolder, mNavigationButtonsHolder;
     private TextView mTextViewPlayer1Score, mTextViewPlayer2Score;
 
     public GameboardFragment() {
         // Required empty public constructor
+    }
+
+    private static int getNumberOfRows() {
+        return (int) Math.round(TOTAL_NUMBER_OF_MOVES / Math.sqrt(TOTAL_NUMBER_OF_MOVES));
     }
 
     /**
@@ -69,19 +81,22 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
         TicTacToeApp mTicTacToeApp = (TicTacToeApp) getActivity().getApplication();
         mRootView.findViewById(R.id.button_new_game).setOnClickListener(this);
         mRootView.findViewById(R.id.button_proceed_to_leader_board).setOnClickListener(this);
+        mRootView.findViewById(R.id.button_new_game).setOnClickListener(this);
         ((TextView) mRootView.findViewById(R.id.textView_player1)).setText(mTicTacToeApp.getPlayer1Name());
         ((TextView) mRootView.findViewById(R.id.textView_player2)).setText(mTicTacToeApp.getPlayer2Name());
         mTextViewPlayer1Score = (TextView) mRootView.findViewById(R.id.textView_player1_score);
         mTextViewPlayer2Score = (TextView) mRootView.findViewById(R.id.textView_player2_score);
         mGameboardHolder = (LinearLayout) mRootView.findViewById(R.id.ll_gameboard_holder);
+        mGameHolder = (LinearLayout) mRootView.findViewById(R.id.ll_game_holder);
         mNavigationButtonsHolder = (LinearLayout) mRootView.findViewById(R.id.ll_navigation_buttons_holder);
+        setPlayersScores();
+        setupOnClickListeners();
+        resetButtons();
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(Activity context) {
         super.onAttach(context);
-        setupOnClickListeners();
-        resetButtons();
         if (context instanceof GameboardFragmentEventsListener)
             mGameboardFragmentEventsListener = (GameboardFragmentEventsListener) context;
         else {
@@ -106,8 +121,8 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
         switch (v.getId()) {
             case R.id.button_new_game:
                 mNoughtsTurn = false;
-                mBoard = new char[3][3];
-                resetButtons();
+                mBoard = new char[NUMBER_OF_ROWS][NUMBER_OF_ROWS];
+                mGameboardFragmentEventsListener.onNewGameClick();
                 break;
             case R.id.button_proceed_to_leader_board:
                 if (mGameboardFragmentEventsListener != null)
@@ -121,12 +136,11 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
      * Reset each button in the grid to be blank and enabled.
      */
     private void resetButtons() {
-        LinearLayout gameboardHolder = (LinearLayout) mRootView.findViewById(R.id.ll_gameboard_holder);
-        int gameboardHolderChildCount = gameboardHolder.getChildCount();
+        int gameboardHolderChildCount = mGameboardHolder.getChildCount();
         int subViewGroupChildCount;
         for (int y = 0; y < gameboardHolderChildCount; y++) {
-            if (gameboardHolder.getChildAt(y) instanceof LinearLayout) {
-                LinearLayout subViewGroup = (LinearLayout) gameboardHolder.getChildAt(y);
+            if (mGameboardHolder.getChildAt(y) instanceof LinearLayout) {
+                LinearLayout subViewGroup = (LinearLayout) mGameboardHolder.getChildAt(y);
                 subViewGroupChildCount = subViewGroup.getChildCount();
                 for (int x = 0; x < subViewGroupChildCount; x++) {
                     if (subViewGroup.getChildAt(x) instanceof Button) {
@@ -150,13 +164,18 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
     private boolean checkWin() {
 
         char winner = NONE_WIN_SYMBOL;
-        if (checkWinner(mBoard, 3, NAUGHT_SYMBOL)) {
+        if (checkWinner(mBoard, NUMBER_OF_ROWS, NAUGHT_SYMBOL)) {
             winner = NAUGHT_SYMBOL;
-        } else if (checkWinner(mBoard, 3, CROSS_SYMBOL)) {
+        } else if (checkWinner(mBoard, NUMBER_OF_ROWS, CROSS_SYMBOL)) {
             winner = CROSS_SYMBOL;
         }
 
         if (winner == NONE_WIN_SYMBOL) {
+            if (mPlayer1Score + mPlayer2Score >= TOTAL_NUMBER_OF_MOVES) { // Game is over
+                Utils.showToast(getActivity(), R.string.no_player_won);
+                mGameboardFragmentEventsListener.onNewGameClick();
+                return false; // nobody won
+            }
             return false; // nobody won
         } else {
             // display winner and store the winner details persistently.
@@ -239,12 +258,12 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
      * Disables all the buttons in the grid.
      */
     private void disableButtons() {
-        LinearLayout gameboardHolder = (LinearLayout) mRootView.findViewById(R.id.ll_gameboard_holder);
-        int gameboardHolderChildCount = gameboardHolder.getChildCount();
+
+        int gameboardHolderChildCount = mGameboardHolder.getChildCount();
         int subViewGroupChildCount;
         for (int y = 0; y < gameboardHolderChildCount; y++) {
-            if (gameboardHolder.getChildAt(y) instanceof LinearLayout) {
-                LinearLayout subViewGroup = (LinearLayout) gameboardHolder.getChildAt(y);
+            if (mGameboardHolder.getChildAt(y) instanceof LinearLayout) {
+                LinearLayout subViewGroup = (LinearLayout) mGameboardHolder.getChildAt(y);
                 subViewGroupChildCount = subViewGroup.getChildCount();
                 for (int x = 0; x < subViewGroupChildCount; x++) {
                     if (subViewGroup.getChildAt(x) instanceof Button) {
@@ -260,12 +279,12 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
      * This will add the OnClickListener to each button inside out LinearLayout
      */
     private void setupOnClickListeners() {
-        LinearLayout gameboardHolder = (LinearLayout) mRootView.findViewById(R.id.ll_gameboard_holder);
-        int gameboardHolderChildCount = gameboardHolder.getChildCount();
+
+        int gameboardHolderChildCount = mGameboardHolder.getChildCount();
         int subViewGroupChildCount;
         for (int y = 0; y < gameboardHolderChildCount; y++) {
-            if (gameboardHolder.getChildAt(y) instanceof LinearLayout) {
-                LinearLayout subViewGroup = (LinearLayout) gameboardHolder.getChildAt(y);
+            if (mGameboardHolder.getChildAt(y) instanceof LinearLayout) {
+                LinearLayout subViewGroup = (LinearLayout) mGameboardHolder.getChildAt(y);
                 subViewGroupChildCount = subViewGroup.getChildCount();
                 for (int x = 0; x < subViewGroupChildCount; x++) {
                     View view = subViewGroup.getChildAt(x); // In our case this will be each button on the grid
@@ -277,12 +296,17 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
 
     private void showGameboard(boolean showGameboard) {
         if (showGameboard) {
-            mGameboardHolder.setVisibility(View.VISIBLE);
+            mGameHolder.setVisibility(View.VISIBLE);
             mNavigationButtonsHolder.setVisibility(View.GONE);
         } else {
-            mGameboardHolder.setVisibility(View.GONE);
+            mGameHolder.setVisibility(View.GONE);
             mNavigationButtonsHolder.setVisibility(View.VISIBLE);
         }
+    }
+
+    private void setPlayersScores() {
+        mTextViewPlayer1Score.setText(String.valueOf(mPlayer1Score));
+        mTextViewPlayer2Score.setText(String.valueOf(mPlayer2Score));
     }
 
     /**
@@ -297,6 +321,8 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
      */
     public interface GameboardFragmentEventsListener {
         void onProceedToLeaderboardClick();
+
+        void onNewGameClick();
     }
 
     /**
@@ -323,11 +349,11 @@ public class GameboardFragment extends Fragment implements View.OnClickListener 
                 button.setText(mNoughtsTurn ? String.valueOf(CROSS_SYMBOL) : String.valueOf(NAUGHT_SYMBOL));
                 if (mNoughtsTurn) {
                     mPlayer1Score++; // Increase player1 score
-                    mTextViewPlayer1Score.setText(String.valueOf(mPlayer1Score));
+
                 } else {
                     mPlayer2Score++; // Increase player2 score
-                    mTextViewPlayer2Score.setText(String.valueOf(mPlayer2Score));
                 }
+                setPlayersScores();
                 button.setEnabled(false);
                 mNoughtsTurn = !mNoughtsTurn;
 
